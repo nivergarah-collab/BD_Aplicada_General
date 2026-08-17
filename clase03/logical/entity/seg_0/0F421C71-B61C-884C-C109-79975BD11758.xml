@@ -15,89 +15,44 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Attribute_1" id="86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91">
+<Attribute name="id_pais" id="86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91">
 <createdBy>nicolinu</createdBy>
 <createdTime>2026-08-17 16:28:29 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Attribute_2" id="E66705A7-6685-5B03-B26B-4ED02233203C">
+<Attribute name="nombre_pais" id="8023BC1F-3048-1678-547D-1410050AF3E5">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:31 UTC</createdTime>
+<createdTime>2026-08-17 16:31:39 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Attribute_3" id="4020D6FD-17E2-05F1-6C90-D9396038E423">
-<createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:31 UTC</createdTime>
-<ownerDesignName>clase03</ownerDesignName>
-<engineerTo>
-<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Attribute_4" id="F64E5BAA-A7FB-3886-473E-109920FD970C">
-<createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:31 UTC</createdTime>
-<ownerDesignName>clase03</ownerDesignName>
-<engineerTo>
-<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Attribute_5" id="A889D79A-F799-6669-A591-CD7E9727AEC8">
-<createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:32 UTC</createdTime>
-<ownerDesignName>clase03</ownerDesignName>
-<engineerTo>
-<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Attribute_6" id="B6C0C6A4-A692-1D00-B8CB-66D17F703894">
-<createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:32 UTC</createdTime>
-<ownerDesignName>clase03</ownerDesignName>
-<engineerTo>
-<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Attribute_7" id="369F90A1-9595-D9F3-2B9C-E7B2DEB51423">
-<createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:32 UTC</createdTime>
-<ownerDesignName>clase03</ownerDesignName>
-<engineerTo>
-<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="734E90EC-8AEB-CA84-2BC7-446EF6C34B56" name="prueba PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-17 16:31:04 UTC</createdTime>
+<ownerDesignName>clase03</ownerDesignName>
+<engineerTo>
+<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
