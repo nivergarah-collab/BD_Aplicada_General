@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4BF5C532-5DD4-F678-D9E3-422B82AA7533" name="DIRECCION">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>209D31F8-23CD-A81D-31FD-95B681C094AA</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_dir" id="DA41D23C-00AA-103E-2974-122C70506887">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[¿¿¿¿]]></commentInRDBMS>
+<generatorID>FCF778F2-B725-0A74-5303-B1FAD1A9CDBC</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_cal_dir" id="7247D2C6-26B6-D5C3-DB99-A1391F1E3019">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[nombre de calle de la direccion]]></comment>
+<generatorID>553631E9-7BE1-9894-48F5-1C7C6F473F48</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_ubi_dir" id="6E5EB377-5786-7AD2-F072-68E53AE0D8E4">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>0E6305AE-D0A6-868D-5E96-4C349580270C</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_dep_dir" id="24F5C50E-56FF-35A4-9A11-5EB904B61924">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>D179846E-0913-48A0-80CD-B12D11DA35DE</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMUNA_id_com" id="2A2B2850-31F2-2CBD-21CE-BFE7847D1804">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>52956CC1-D94E-45A7-50A3-DA6BE0F24E77</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A7E0367-6B17-4C47-E26D-5BB45BAE6050" referredColumn="86306AC6-68D5-1F84-541A-67710D2A16A5"/>
+</associations>
+</Column>
+<Column name="SEDE_id_sed" id="FD044F84-BC53-E11F-CA37-239AA73F8064">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>FAAD3CB9-024A-C25B-B742-49E18ED813AD</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0A97549-13A7-7CB1-F5EC-1B39EAE798F6" referredColumn="6BAB2B99-06A0-2DC5-9867-A080C9C12CC7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF56C5A6-45A5-1B4E-22F8-AB95BC410505" name="DIRECCION_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>67882ACC-85E3-D67E-DF6F-D9DC3A18891A</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA41D23C-00AA-103E-2974-122C70506887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6858E5D9-2B26-B668-1460-95242ABC4A4B" name="DIRECCION_COMUNA_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>18FD8114-6522-6365-B2BF-7865085E5D21</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A2B2850-31F2-2CBD-21CE-BFE7847D1804"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C1DE0708-D843-5327-D286-CAA73E71EA0C" name="DIRECCION_SEDE_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>1F9687A0-7EE0-5437-6835-46C76B51D7D9</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD044F84-BC53-E11F-CA37-239AA73F8064"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

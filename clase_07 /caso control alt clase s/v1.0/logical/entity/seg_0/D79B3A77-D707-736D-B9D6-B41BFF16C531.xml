@@ -81,6 +81,21 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_sal" id="2DED2887-525F-6CA6-BE3F-5EBD2F3BC167">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:15:51 UTC</createdTime>
+<generatorID>16A06F02-FE12-B097-FA2B-CC917131CF97</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>32BBF335-C737-C91F-724A-56F9DE02597B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="6E28110E-D6FA-78E1-0916-4B80FCD1871B" name="ASIGNATURA PK">

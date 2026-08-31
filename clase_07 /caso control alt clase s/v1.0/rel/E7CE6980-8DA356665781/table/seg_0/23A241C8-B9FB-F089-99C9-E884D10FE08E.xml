@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23A241C8-B9FB-F089-99C9-E884D10FE08E" name="DOCENTE">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>19E99288-E60D-8F41-F13C-9A1A00EABBA7</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="run_doc" id="67C74EFF-DA34-690C-96E5-1DF68BEB8DD8">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[numero de run del docente 112.123.123-1]]></comment>
+<generatorID>143B212B-F321-522C-A59A-5EF6620B336D</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pri_nom_doc" id="DBE68B53-49E4-B33C-D300-D5417169D3DD">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>577853DB-EAA2-071E-CE4C-2AD9A9E9B3F6</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_nom_doc" id="1970A6FD-FA91-4021-C17D-C8554105EE4F">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>B86C93CF-9D23-FE75-26D8-3D3457F399DB</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pri_ape_doc" id="07CC7050-EE94-7FD8-B7FF-65DA1C79B77F">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>40AAEE10-5C71-C563-4446-8F93380EA7F2</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_ape_doc" id="730DCE2D-7B7F-4266-8492-D5D014374CCA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>E8C26285-840A-82AF-924B-58EBA3EEFA46</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_nac_doc" id="5C77D7FE-D6FA-E179-2DE5-27405AC1828C">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>F9F9094C-304A-A432-3FF0-CF62B92E8A19</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cor_ins_doc" id="36E9B327-47B1-940E-6F96-59BF4EBCFA3D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[correo institucional docente]]></comment>
+<generatorID>00AA604A-10BB-FE97-940A-ED683D020221</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="esp_doc" id="EABFCDE3-59BD-913C-C875-89375FA55650">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>6D80C117-B68A-FFE1-4348-A0EFF81368D1</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION_id_dir" id="C678EFEE-F9E1-FCA6-3658-4F09D3C952DA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>7C4CBBA7-AA2B-1975-4C4B-27482A890298</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CAA1198E-5400-EB59-694F-2FE5B7245757" referredColumn="DA41D23C-00AA-103E-2974-122C70506887"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E595426A-4B32-F2ED-A899-7BFCFC1474A1" name="DOCENTE_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>5A2D24FF-088D-744B-25C9-85B9A6B2098D</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67C74EFF-DA34-690C-96E5-1DF68BEB8DD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BF44714-D1A0-4A0A-D50B-E2C6B7289EFB" name="DOCENTE_DIRECCION_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>3585D15C-B0E3-3579-D6F7-C341D7457468</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C678EFEE-F9E1-FCA6-3658-4F09D3C952DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

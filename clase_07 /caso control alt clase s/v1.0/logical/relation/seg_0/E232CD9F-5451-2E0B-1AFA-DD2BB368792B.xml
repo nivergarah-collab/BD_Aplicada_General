@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IMPARTIR" directorySegmentName="seg_0" id="E232CD9F-5451-2E0B-1AFA-DD2BB368792B">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 15:59:25 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>imparte</nameOnSource>
+<nameOnTarget>es impartida</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>19E99288-E60D-8F41-F13C-9A1A00EABBA7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D79B3A77-D707-736D-B9D6-B41BFF16C531</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

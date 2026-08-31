@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E85F4825-3602-7815-F93B-6E55AB7A9F52" name="ESTUDIANTE">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>28E3D76B-F618-4F61-AFDE-266DB60638D5</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="run_est" id="B356C88F-FA41-ACF6-606E-02D2283C0181">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[numero de run del docente 112.123.123-1]]></comment>
+<generatorID>7DF23925-09B1-ABE7-E3C9-7EEFC1FB65F5</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pri_nom_est" id="70C9193A-FEB4-5856-D2FF-58266E93C07D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>2C2F4F7D-1DA6-86E2-DE22-C753A5D0EF00</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_nom_est" id="095F293D-6089-36D1-4432-36F8AA4FA5E4">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>F6F31C87-7898-7726-6492-699C73DFDE4C</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pri_ape_est" id="58696E8D-29CD-24DD-BC60-23990E4C94D7">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>A697E092-A79B-C832-7299-C457485547FF</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_ape_est" id="07ECE1B5-E679-8CE1-4D09-C2DC479ECDCD">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>B0C55660-9FE6-D6C5-B22D-85AD106262DE</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_nac_est" id="03D824F5-B15F-FC32-6D87-611510CE9978">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>3607E086-5525-CD07-C75D-532EA30CB387</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cor_ins_est" id="1368AED4-8537-301B-7055-499B2D955A2D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[correo institucional docente]]></comment>
+<generatorID>83BADAFA-C393-FFDD-3B6E-5E7174F5B2D2</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION_id_dir" id="B403FE7A-460E-B59C-A5CC-FD7AD584861E">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>86A5EEE2-17DA-078E-F7B4-729563AF6218</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="27F9BE7C-CE58-6800-20C9-136B4BBD7D17" referredColumn="DA41D23C-00AA-103E-2974-122C70506887"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="994881F2-F796-1931-754B-8C38160AE090" name="ESTUDIANTE_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>2911A98E-3B43-5F95-3245-390AB6C67E95</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B356C88F-FA41-ACF6-606E-02D2283C0181"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0BBC0899-D383-DF58-24D9-28D12161AFBD" name="ESTUDIANTE_DIRECCION_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>6F965B12-A152-2B2E-C2A9-3912A216E3E8</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B403FE7A-460E-B59C-A5CC-FD7AD584861E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

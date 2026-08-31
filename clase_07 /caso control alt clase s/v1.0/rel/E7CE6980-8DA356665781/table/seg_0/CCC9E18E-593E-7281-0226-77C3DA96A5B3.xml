@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCC9E18E-593E-7281-0226-77C3DA96A5B3" name="UTILIZAR">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CLASE_id_cla" id="5844A803-6134-E77E-CE43-B90513410561">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="050F59F0-0B4B-494D-B229-0C35760C860D" referredColumn="D6B3A26A-140A-790A-491E-D3E8D787606F"/>
+</associations>
+</Column>
+<Column name="SALA_id_sal" id="7B78AE3D-A675-0F7C-C117-77BAB63A6512">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE2751EA-A89D-F6D9-0F8C-51ED66268CAA" referredColumn="6BF93EEC-440E-1B17-F0D6-C00284BCF055"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBD69153-C7F7-72B5-B55A-FFF228F57143" name="UTILIZAR_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5844A803-6134-E77E-CE43-B90513410561"/>
+<colUsage columnID="7B78AE3D-A675-0F7C-C117-77BAB63A6512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DB45EB1-F7B8-98D1-3BF2-F1F4B016ABC8" name="UTILIZAR_CLASE_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>E82E7DF6-1AE4-6FC0-98A6-E5029102A015</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5844A803-6134-E77E-CE43-B90513410561"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48502146-8C99-0969-A4B2-AFE1B021DDD3" name="UTILIZAR_SALA_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>E82E7DF6-1AE4-6FC0-98A6-E5029102A015</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B78AE3D-A675-0F7C-C117-77BAB63A6512"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

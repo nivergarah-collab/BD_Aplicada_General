@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CB5AD71-605B-397E-1917-C7786676A916" name="COMUNA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>88CA1579-D1FB-73ED-91F2-7465A9576633</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_com" id="86306AC6-68D5-1F84-541A-67710D2A16A5">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>C5C5E80F-7CBB-70F6-1EFB-D9995CFCFAAD</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_com" id="05BF8123-327A-8FC6-B133-8DA854273032">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<comment><![CDATA[nombre comuna]]></comment>
+<generatorID>72ABCFBA-A040-0103-F150-D5B52CC864B0</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD_id_ciu" id="F1A5CE38-363C-D644-576C-778D5B156C4A">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>F411260E-F90B-6CBB-21E4-642638CFB2C5</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D35304A0-1458-6927-4382-419738CB22B6" referredColumn="9B775967-B1BB-A86E-EB8C-E536912A67D3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DCDD0CC-9AAD-5B52-AD32-5787E4DA96D0" name="COMUNA_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>FA5243C8-C99E-228C-788B-61D0DF1AB557</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86306AC6-68D5-1F84-541A-67710D2A16A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05E06590-7140-A192-FADA-BAC0E8141789" name="COMUNA_CIUDAD_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>CE9A564A-B107-61CD-78B7-3419D560B44B</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1A5CE38-363C-D644-576C-778D5B156C4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

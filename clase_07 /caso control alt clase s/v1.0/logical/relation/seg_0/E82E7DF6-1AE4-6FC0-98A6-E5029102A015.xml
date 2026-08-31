@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTILIZAR " directorySegmentName="seg_0" id="E82E7DF6-1AE4-6FC0-98A6-E5029102A015">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:09:09 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>es utilizada </nameOnSource>
+<nameOnTarget>utiliza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A055677D-1D89-7FD6-81A6-D16BB9F16D74</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DF40672F-4001-1CC3-304B-6B392C1B85AD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

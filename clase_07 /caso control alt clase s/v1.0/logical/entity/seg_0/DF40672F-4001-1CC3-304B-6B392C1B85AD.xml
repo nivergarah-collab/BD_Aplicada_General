@@ -54,6 +54,21 @@
 <dataTypePrecision>3</dataTypePrecision>
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_sal1" id="10A49C91-B8CE-05E5-C768-ED99488A833A">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:26:17 UTC</createdTime>
+<generatorID>CE17A9A4-45F7-2EE6-D436-0E00C58764F0</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>32BBF335-C737-C91F-724A-56F9DE02597B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="81926C7D-BD54-1EF5-4328-752BED048426" name="SALA PK">

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1351A5BA-2601-468F-EF9B-44B3408FBF9B" containerWithKeyObject="0AE9C2AC-E431-7643-A2BD-772CBB92F9A7" localFKIndex="02206EE0-CF94-B5EF-B3F0-57B673BEFBCC" name="IMPARTIR_DOCENTE_FK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>E232CD9F-5451-2E0B-1AFA-DD2BB368792B</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<referredTableLongName>DOCENTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>23A241C8-B9FB-F089-99C9-E884D10FE08E</referredTableID>
+<keyObject>E595426A-4B32-F2ED-A899-7BFCFC1474A1</keyObject>
+<referredKeyID>E595426A-4B32-F2ED-A899-7BFCFC1474A1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>run_doc</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

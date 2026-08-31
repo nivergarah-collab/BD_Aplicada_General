@@ -109,6 +109,21 @@
 <dataTypeSize>150</dataTypeSize>
 <ownDataTypeParameters>150,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_dir" id="86A5EEE2-17DA-078E-F7B4-729563AF6218">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:30:58 UTC</createdTime>
+<generatorID>6F965B12-A152-2B2E-C2A9-3912A216E3E8</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>FCF778F2-B725-0A74-5303-B1FAD1A9CDBC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2911A98E-3B43-5F95-3245-390AB6C67E95" name="DOCENTE PK">

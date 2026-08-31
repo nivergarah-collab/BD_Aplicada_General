@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC7458AF-29E2-184E-874E-70D926E8E0D8" name="ASIGNATURA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>D79B3A77-D707-736D-B9D6-B41BFF16C531</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_asi" id="6A86FA3E-CE80-3E4D-DDF9-0E20389F9758">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>E67D2632-7AC3-F242-5EC5-8F70D0030CFE</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_asi" id="BCA01BF4-EE3B-D522-2537-6944552BC2BD">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>F4F44F52-351B-6EDF-3537-466422605FDF</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cod_asi" id="13EC362E-43DD-2E0A-7490-89F29030503B">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<comment><![CDATA[SJ_BDY1101]]></comment>
+<generatorID>F70D8D40-CAAE-861E-0D62-E69132E4DB8D</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sec_asi" id="50406848-0755-8496-523D-D17A196AA34F">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>C4112A4F-53CC-BC03-3330-E3AB5FD6BA5F</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jor_asi" id="1E51E918-F6DB-C02C-EDF5-67ED839E8FB1">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>DCBB90EB-CB78-1436-F7E0-EB5A7D306C93</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_sal" id="C470F938-020D-257A-E71D-9109FF53A598">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:06 UTC</createdTime>
+<generatorID>2DED2887-525F-6CA6-BE3F-5EBD2F3BC167</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7958F2D7-1B5D-C5A1-6467-8450B83C5518" name="ASIGNATURA_PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:52:07 UTC</createdTime>
+<generatorID>6E28110E-D6FA-78E1-0916-4B80FCD1871B</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A86FA3E-CE80-3E4D-DDF9-0E20389F9758"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -41,6 +41,36 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id_sal" id="78730454-463F-4C54-5A8B-8EE0EECA637F">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:25:28 UTC</createdTime>
+<generatorID>CE17A9A4-45F7-2EE6-D436-0E00C58764F0</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>32BBF335-C737-C91F-724A-56F9DE02597B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sed" id="8A11963A-C821-CB51-E252-CA9ED72E958E">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-31 16:26:57 UTC</createdTime>
+<generatorID>42268642-F937-FE95-6B07-B4D79899BA4A</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>A538B84F-935F-EFBC-D128-C6BC00E6747C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="08CB60C6-07D0-7080-90D0-5337B710FBB3" name="PISO PK">
