@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88CA1579-D1FB-73ED-91F2-7465A9576633" name="COMUNA">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-24 16:45:09 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_com" id="C5C5E80F-7CBB-70F6-1EFB-D9995CFCFAAD">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-24 16:45:33 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_com" id="72ABCFBA-A040-0103-F150-D5B52CC864B0">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-24 16:45:49 UTC</createdTime>
+<comment><![CDATA[nombre comuna]]></comment>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ciu" id="F411260E-F90B-6CBB-21E4-642638CFB2C5">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-26 13:21:24 UTC</createdTime>
+<generatorID>CE9A564A-B107-61CD-78B7-3419D560B44B</generatorID>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<referedAttribute>28106DDB-B29A-6EE5-A14E-551C001194CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA5243C8-C99E-228C-788B-61D0DF1AB557" name="COMUNA PK">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-24 16:45:46 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C5C5E80F-7CBB-70F6-1EFB-D9995CFCFAAD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

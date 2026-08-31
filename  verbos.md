@@ -1,0 +1,9 @@
+tener 
+*poseer 
+administrar
+gestionar
+dirige
+contener 
+albergar
+ubica
+esta

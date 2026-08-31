@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UBICAR" directorySegmentName="seg_0" id="1F9687A0-7EE0-5437-6835-46C76B51D7D9">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-26 13:43:27 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<sourcePk>8035B038-7F2A-D4FA-B68A-B3C62243369A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>se ubica</nameOnSource>
+<nameOnTarget>ubica</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6F55BF7E-B0B9-63F6-FE22-31FA398BEE78</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>209D31F8-23CD-A81D-31FD-95B681C094AA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

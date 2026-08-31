@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GESTIONAR" directorySegmentName="seg_0" id="768627F3-A81A-F94F-D791-BBF20F6360E5">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-26 13:12:51 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<sourcePk>6B55CC46-D0B3-72EB-DA42-5EFA70ADE04C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>gestiona</nameOnSource>
+<nameOnTarget>es gestionada</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>72892A9E-7B1E-15FB-6DE2-430D47FCB9E3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FF12B6ED-950E-6989-D451-F4FFB8E334FB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

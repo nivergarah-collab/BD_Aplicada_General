@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74130FBB-9827-4458-FD4C-700196B2B1B8" name="PAIS">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:19:20 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pais" id="0AA16AFD-A98D-EB1C-D815-8A0D76B823EE">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:22:02 UTC</createdTime>
+<comment><![CDATA[00000 - 99999 => precision 5]]></comment>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_pais" id="3C8B7C93-75DA-F3C4-B775-B4F72985D15A">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:26:21 UTC</createdTime>
+<comment><![CDATA[0 a 30 caracteres]]></comment>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_bandera" id="ABE19FAA-ADC4-B308-BD56-FE0E3AD29A59">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:37:45 UTC</createdTime>
+<generatorID>27CAD986-EA37-75AC-7FA6-F508F065EA44</generatorID>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<referedAttribute>1E133B52-5234-4705-7C96-A93524B553B4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="864410D0-80CF-E92E-6D80-3C48352FAA41" name="PAIS PK">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:27:57 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0AA16AFD-A98D-EB1C-D815-8A0D76B823EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

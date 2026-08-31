@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALBERGAR" directorySegmentName="seg_0" id="18FD8114-6522-6365-B2BF-7865085E5D21">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-26 13:32:25 UTC</createdTime>
+<ownerDesignName>v1.0</ownerDesignName>
+<engineerTo>
+<item key="E7CE6980-9F6A-AD5E-7A0D-8DA356665781" value="true"/>
+</engineerTo>
+<sourcePk>FA5243C8-C99E-228C-788B-61D0DF1AB557</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>alberga</nameOnSource>
+<nameOnTarget>es albergada</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>88CA1579-D1FB-73ED-91F2-7465A9576633</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>209D31F8-23CD-A81D-31FD-95B681C094AA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F421C71-B61C-884C-C109-79975BD11758" name="PAIS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62CDED01-75BC-2896-F2D8-9C17DDA7E6B1" name="BANDERA">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:27:28 UTC</createdTime>
+<createdTime>2026-08-17 16:37:44 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -15,9 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_pais" id="86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91">
+<Attribute name="id_bandera" id="48DC1D8F-249D-099C-092B-3EF19049BDD7">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:29 UTC</createdTime>
+<createdTime>2026-08-17 16:37:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[99999 maximo]]></commentInRDBMS>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -25,11 +26,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre_pais" id="8023BC1F-3048-1678-547D-1410050AF3E5">
+<Attribute name="nombre_bandera" id="D03AA4FB-8DA2-C92C-2417-C6A8E6716B34">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:31:39 UTC</createdTime>
+<createdTime>2026-08-17 16:38:53 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -40,33 +42,44 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_bandera" id="FBAA5730-0497-B898-77C5-378D4953DEFF">
+<Attribute name="imagen_bandera" id="6381CC53-A2EB-DAE2-9551-10FF44849A34">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:48:43 UTC</createdTime>
+<createdTime>2026-08-17 16:42:49 UTC</createdTime>
+<ownerDesignName>clase03</ownerDesignName>
+<engineerTo>
+<item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="68FEA88F-13B6-6B1F-4940-F808991D8886">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-08-17 16:45:08 UTC</createdTime>
 <generatorID>9ED9C9FF-14E8-AEB3-3FBD-349F77A861DD</generatorID>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
-<referedAttribute>48DC1D8F-249D-099C-092B-3EF19049BDD7</referedAttribute>
+<referedAttribute>86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>5</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="734E90EC-8AEB-CA84-2BC7-446EF6C34B56" name="prueba PK">
+<identifier id="2ECEC8B7-3676-96EE-9610-030F72CE6646" name="BANDERA PK">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:31:04 UTC</createdTime>
+<createdTime>2026-08-17 16:38:28 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91</attributeRef>
+<attributeRef>48DC1D8F-249D-099C-092B-3EF19049BDD7</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

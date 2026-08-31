@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DDE9AF10-FF1C-412D-DE78-92DA580CBB30" name="DOCENTE">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:00:48 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="run_docente" id="7620AC8A-5A85-BB43-22DF-AA153F7D7086">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:01:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[112.123.123-4(varchar)     ----    22.222.222-K(varchar)         12123123(numeric)]]></commentInRDBMS>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="primer_nombre_docente" id="90AE6115-8A23-68DE-D127-336815A02DE8">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:05:28 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="segundo_nombre_docente" id="1D60ADC1-DC92-AE8E-F122-19C1946668FF">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:06:12 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="primer_apellido_docente" id="3AFF3F37-CB4A-6250-44BB-D32717A38FA7">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:06:35 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="segundo_apellido_docente" id="D137B2E2-DF44-AC3A-D96F-F9AA229A5AD0">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:07:06 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_nac_doc" id="86042734-778D-0998-0C5F-94FD357FD098">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:08:02 UTC</createdTime>
+<comment><![CDATA[fecha nacimiento docente (DD/MM/YY)]]></comment>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cor_ins_doc" id="025B47E5-C521-0BCF-0A94-95FD721F89D4">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:09:36 UTC</createdTime>
+<comment><![CDATA[correo institucional docente]]></comment>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4B8D5DD-A98A-6B11-28B7-B8F3E8B22CDD" name="DOCENTE PK">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 15:05:20 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7620AC8A-5A85-BB43-22DF-AA153F7D7086</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

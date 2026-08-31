@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F421C71-B61C-884C-C109-79975BD11758" name="PAIS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1828756C-8150-2D2F-0A89-4990B99E199D" name="CIUDAD">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:27:28 UTC</createdTime>
+<createdTime>2026-08-17 17:04:09 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_pais" id="86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91">
+<Attribute name="id_ciudad" id="57E4A023-D9C6-9AFA-20A3-86F01FE008E4">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:28:29 UTC</createdTime>
+<createdTime>2026-08-17 17:04:16 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -25,11 +25,12 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombre_pais" id="8023BC1F-3048-1678-547D-1410050AF3E5">
+<Attribute name="nombre_ciudad" id="6DB3647D-3BA9-8BF0-AE55-3EAC92E0C44F">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:31:39 UTC</createdTime>
+<createdTime>2026-08-17 17:04:40 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
@@ -40,15 +41,15 @@
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_bandera" id="FBAA5730-0497-B898-77C5-378D4953DEFF">
+<Attribute name="id_region" id="31DBC08A-8CEF-A0BF-185E-05C042881D04">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:48:43 UTC</createdTime>
-<generatorID>9ED9C9FF-14E8-AEB3-3FBD-349F77A861DD</generatorID>
+<createdTime>2026-08-17 17:08:17 UTC</createdTime>
+<generatorID>6FE23F77-CAAD-CE7D-ADAD-817E42B956BB</generatorID>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
-<referedAttribute>48DC1D8F-249D-099C-092B-3EF19049BDD7</referedAttribute>
+<referedAttribute>88FB69D0-1BDC-C00D-A4A0-BF9DE823324E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -57,16 +58,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="734E90EC-8AEB-CA84-2BC7-446EF6C34B56" name="prueba PK">
+<identifier id="0A64E4C3-CCF3-1692-79F6-99188B131220" name="CIUDAD PK">
 <createdBy>nicolinu</createdBy>
-<createdTime>2026-08-17 16:31:04 UTC</createdTime>
+<createdTime>2026-08-17 17:04:34 UTC</createdTime>
 <ownerDesignName>clase03</ownerDesignName>
 <engineerTo>
 <item key="9953111F-BFC5-31B5-FDD7-401509C9471D" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>86F95CE8-DBEF-A8E3-EEAC-80B4C6A32D91</attributeRef>
+<attributeRef>57E4A023-D9C6-9AFA-20A3-86F01FE008E4</attributeRef>
+<attributeRef>31DBC08A-8CEF-A0BF-185E-05C042881D04</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
