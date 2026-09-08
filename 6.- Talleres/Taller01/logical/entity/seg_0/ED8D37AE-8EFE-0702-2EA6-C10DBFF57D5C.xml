@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED8D37AE-8EFE-0702-2EA6-C10DBFF57D5C" name="TRATAMIENTO">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:23:14 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_trat" id="2D342F05-890B-0E2D-12C7-1AAD7ED2B662">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:23:22 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_trat" id="5AC998E6-AC36-E47D-C806-AEDF78D5AD78">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:23:22 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ind_trat" id="00E10E24-4394-3419-D3E6-2C4DD0B158A1">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:23:22 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_ini_trat" id="9347E20F-1719-9372-E325-CA2CB8A4468E">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:23:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[fecha inicio tratamiento ]]></commentInRDBMS>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cant_dia_trat" id="41C8F2EB-B11B-B96A-7CFB-839851806EF6">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:25:49 UTC</createdTime>
+<comment><![CDATA[cantidad dia de tratamientos ]]></comment>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_diag" id="00971DC1-0C95-1B8D-21C1-9014BA2DF4DE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:51:49 UTC</createdTime>
+<generatorID>D552A6B4-7780-7A71-EB8D-D1D8FFBB9A7B</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<referedAttribute>6401EF0F-EB30-2AD9-7E68-B57A38CDC86C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B2409362-ED58-2D17-DA2D-66E6BC2BE7BF" name="TRATAMIENTO PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:24:15 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2D342F05-890B-0E2D-12C7-1AAD7ED2B662</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

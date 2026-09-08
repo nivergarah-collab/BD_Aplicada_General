@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="2.2.2.- TurbulenciasArilineS.A" id="3BECFAC0-E101-C06B-266D-6494922E4194" version="3.5">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 15:07:49 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3BECFAC0-E101-C06B-266D-6494922E4194</designId>
+</OSDM_Design>

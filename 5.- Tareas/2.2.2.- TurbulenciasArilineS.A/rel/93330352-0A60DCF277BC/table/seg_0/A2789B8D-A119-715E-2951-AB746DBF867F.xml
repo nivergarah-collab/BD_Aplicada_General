@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2789B8D-A119-715E-2951-AB746DBF867F" name="VUELO">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>929F029C-E2C9-70AE-5F8E-71AEEF17C400</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="code" id="1655DA8F-58BC-C68F-8532-880C912279F6">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>870C0442-5B20-0B29-2F2C-D3627F1FC854</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="despegue" id="65BB44B8-FE75-1A13-2528-E6E7FE816CD5">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>66A05B28-CA09-8B68-E762-1B55DC2776FF</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aterrizaje" id="A4F706D4-E62D-67A1-E715-1DA07885CC47">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>601F607A-D173-6463-639F-B34EF645CA13</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pasajeros" id="2FF27525-F55F-4158-B107-58C435BA5311">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>B903D964-37A8-2D63-8B4A-AD9D1AB56A22</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vacantes" id="A27A7617-9DAA-54E4-6237-6FCAFAA31192">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>DBFF7A9F-6A48-1C5C-5096-432550B3E987</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AVION_license" id="F3DCEF14-7238-A8F1-9D83-D7629F3B255D">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>A4AA7E6C-F00E-6DA8-D0FF-E0A2A05030FC</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08B6AFE7-A817-C1F0-7F5D-52C03785D7A5" referredColumn="C61523D6-7AE9-9126-DA18-92801B0C74A3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F70E0E21-FDFB-FC66-B7D9-F9200B012C9F" name="VUELO_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>6D8CA351-D0DA-FCC8-814E-FA061229F710</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1655DA8F-58BC-C68F-8532-880C912279F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="602215EE-E9A3-B1CB-2B0A-0377C9572DB1" name="VUELO_AVION_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>E717A41D-02B9-F618-0DD8-ECEF2B7CE5F1</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3DCEF14-7238-A8F1-9D83-D7629F3B255D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

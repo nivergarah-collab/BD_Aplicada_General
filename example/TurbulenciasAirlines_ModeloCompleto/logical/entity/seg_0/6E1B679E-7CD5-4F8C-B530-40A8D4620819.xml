@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E1B679E-7CD5-4F8C-B530-40A8D4620819" name="AEROLINEA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_aerolinea" id="D2E5D3BD-3E8E-4892-A8B9-9D5F2370B846">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="707087E1-681B-4649-AF4D-737C9DB45449">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="CB842612-7A76-467D-BA81-6B87AAF5D6B5">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo_institucional" id="BABE9209-146A-4742-86EE-9791DA902200">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono" id="05904A55-FA05-43DA-B7BF-B57D3C389EBB">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logo" id="63A4AD5A-0F75-4E66-A123-2011CA715F8B">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C967E813-D858-44C9-84ED-D8731AD5960F" name="AEROLINEA PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D2E5D3BD-3E8E-4892-A8B9-9D5F2370B846</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

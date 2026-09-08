@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings>
+	<logical_type_for_domain_presentation value="false" />
+	<automatic_pk_generation value="false" />
+	<automatic_uk_generation value="false" />
+	<automatic_fk_generation value="false" />
+	<preserve_ddl_generation_options value="false" />
+	<use_global_design_level_settings value="false" />
+	<use_preferred_classification_types value="false" />
+	<substitution_patterns>
+	</substitution_patterns>
+	<classification_types>
+	</classification_types>
+	<default_fonts_and_colors>
+	</default_fonts_and_colors>
+	<default_line_widths_and_colors>
+		<lwc_object classname="Logical Relation" color="-16777216" width="1">
+		</lwc_object>
+		<lwc_object classname="Logical Inheritance" color="-65536" width="1">
+		</lwc_object>
+		<lwc_object classname="Relational Foreign Key" color="-16777216" width="1">
+		</lwc_object>
+		<lwc_object classname="Type Substitution" color="-16725996" width="1">
+		</lwc_object>
+		<lwc_object classname="Implied Foreign Key" color="-2472729" width="1">
+		</lwc_object>
+		<lwc_object classname="Datatype Reference" color="-16776961" width="1">
+		</lwc_object>
+		<lwc_object classname="Datatype Inheritance" color="-65536" width="1">
+		</lwc_object>
+		<lwc_object classname="Multidimentional Link" color="-16776961" width="1">
+		</lwc_object>
+		<lwc_object classname="Multidimensional Hierarchy" color="-16725996" width="1">
+		</lwc_object>
+		<lwc_object classname="Process Flow" color="-65536" width="1">
+		</lwc_object>
+	</default_line_widths_and_colors>
+	<naming_standard_rules>
+		<logical>
+			<separator value= "Space" char=" "/>
+			<entity>
+			</entity>
+			<attribute>
+			</attribute>
+		</logical>
+		<relational>
+			<separator value= "_" abbreviated_only="false"/>
+			<table>
+			</table>
+			<column>
+			</column>
+		</relational>
+		<domains>
+			<separator value= " "/>
+			<domain>
+			</domain>
+		</domains>
+		<constraints>
+			<pk value="{table}_PK"/>
+			<fk value="{child}_{parent}_FK"/>
+			<ck value="{table}_CK"/>
+			<un value="{table}_{column}_UN"/>
+			<idx value="{table}_{column}_IDX"/>
+			<automatic_idx value="{table}_{column}_IDX"/>
+			<colck value="CK_{table}_{column}"/>
+			<colnnc value="NNC_{table abbr}_{column}"/>
+			<column_foreign_key value="{ref table}_{ref column}"/>
+			<ui value="{entity} PK"/>
+			<relation_attribute value="{ref entity}_{ref attribute}"/>
+			<surrogate_key value="{table abbr}_PK"/>
+			<surrogate_key_col value="{table abbr}_ID"/>
+			<discriminator_col value="{table abbr}_TYPE"/>
+		</constraints>
+		<glossaries>
+		</glossaries>
+	</naming_standard_rules>
+	<comparemapping>
+	</comparemapping>
+	<engineering_params>
+		<delete_without_origin value="false"/>
+		<engineer_coordinates value="true"/>
+		<engineer_generated value="false"/>
+		<show_engineering_intree value="false"/>
+		<apply_naming_std value="true"/>
+		<use_pref_abbreviation value="true"/>
+		<upload_directory value=""/>
+		<date_format value="YYYY/MM/DD HH24:MI:SS"/>
+		<timestamp_format value="YYYY/MM/DD HH24:MI:SS.FF"/>
+		<timestamp_tz_format value="YYYY/MM/DD HH24:MI:SS.FFTZH:TZM"/>
+	</engineering_params>
+	<naming_options>
+	</naming_options>
+	<deleted_files>
+	</deleted_files>
+	<dynamic_properties>
+	</dynamic_properties>
+</settings>

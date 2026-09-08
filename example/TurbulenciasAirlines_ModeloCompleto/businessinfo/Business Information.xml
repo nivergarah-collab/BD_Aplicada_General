@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="F6CF6426-A81E-4CA0-9840-450DCF9A9C2C">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

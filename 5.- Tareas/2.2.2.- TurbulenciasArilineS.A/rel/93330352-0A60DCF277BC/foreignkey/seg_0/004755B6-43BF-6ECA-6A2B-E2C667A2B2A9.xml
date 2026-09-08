@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="004755B6-43BF-6ECA-6A2B-E2C667A2B2A9" containerWithKeyObject="79106DF0-AB45-C9FE-D8E9-FB703CBFE9E1" localFKIndex="642EE7B6-CDBB-182D-91A4-E14B48D64520" name="ORGANIZAR_PROGRAMAS_DE_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>59CFD45F-BC03-BE66-436A-CD0F4F5562C9</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<referredTableLongName>PROGRAMAS_DE_VUELO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C6B1EECE-C0A5-0588-E37C-C2A565F011E8</referredTableID>
+<keyObject>772832EF-9BD8-52DB-B5B1-69F7C1FE98D1</keyObject>
+<referredKeyID>772832EF-9BD8-52DB-B5B1-69F7C1FE98D1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PROGRAMAS_DE_VUELO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

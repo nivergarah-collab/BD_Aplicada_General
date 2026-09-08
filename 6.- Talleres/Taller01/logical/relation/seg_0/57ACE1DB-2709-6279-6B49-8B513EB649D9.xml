@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="REALIZAR " directorySegmentName="seg_0" id="57ACE1DB-2709-6279-6B49-8B513EB649D9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:59:44 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>5AE4DEB5-7E34-1056-D993-D96A88AEE17A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>realiza</nameOnSource>
+<nameOnTarget>es realizado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>10E66257-91F8-24CB-D0E4-257B579194E1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ECDF460E-E047-E17C-41E1-B8F7F1A960D2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

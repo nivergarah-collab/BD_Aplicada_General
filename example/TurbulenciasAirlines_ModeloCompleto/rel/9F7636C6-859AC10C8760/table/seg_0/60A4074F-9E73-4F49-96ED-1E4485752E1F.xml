@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60A4074F-9E73-4F49-96ED-1E4485752E1F" name="AEROLINEA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>6E1B679E-7CD5-4F8C-B530-40A8D4620819</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_aerolinea" id="AF7CFC9D-C04B-4C81-ACFF-419A4343EC45">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>D2E5D3BD-3E8E-4892-A8B9-9D5F2370B846</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="37022C09-74CB-4DBC-A3E4-BEC5C62204AC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>707087E1-681B-4649-AF4D-737C9DB45449</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="CFA2F520-DAFF-45B3-B0B0-5828D79438BC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>CB842612-7A76-467D-BA81-6B87AAF5D6B5</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_institucional" id="84A17727-A1F1-435B-88C7-F2F845697EAB">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>BABE9209-146A-4742-86EE-9791DA902200</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="455E6D6F-2A7B-4F37-B181-472295E287BD">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>05904A55-FA05-43DA-B7BF-B57D3C389EBB</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="logo" id="E208948D-45D7-4C90-A855-20143A2F1EDE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>63A4AD5A-0F75-4E66-A123-2011CA715F8B</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9759E8E7-82A9-4050-9487-FA3C94942228" name="AEROLINEA_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>C967E813-D858-44C9-84ED-D8731AD5960F</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF7CFC9D-C04B-4C81-ACFF-419A4343EC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

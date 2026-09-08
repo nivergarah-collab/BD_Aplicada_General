@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0A0BC8C-220B-8006-3521-E63072EEEE73" name="PACIENTE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>C2818D24-1C5F-1583-EA64-97737ADCB96D</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="run_pac" id="B4D44A3E-15CB-F9A1-6E07-BF1939BB5D20">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>18100D33-6F93-DDFB-2D01-80D454603493</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pri_nom_pac" id="DDDEB929-BDBD-3B78-35F0-D219144E5CF5">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>46E0FBA2-F364-B000-819C-9785A24C9C54</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_nom_pac" id="42B92AB4-2B7B-8946-F810-AE847E3CE110">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>9DD08152-F580-3292-A0A0-102BA8110873</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prim_ape_pac" id="A63BF03B-1B09-B37C-2CAF-00E93BE57696">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>7DFFC76B-C679-DF68-4737-A6892C8FB1F9</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seg_ape_pac" id="92DC55FD-81A2-58F2-B9A5-26FE461B9439">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>669A0D21-97CA-B7BD-0203-ECF14C5EEAA6</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_nac_pac" id="0B3BD224-AE78-BA63-6535-C25BC55B3077">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>3816B2E8-3A0A-D988-4536-AAB77AA9CB3B</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cor_pac" id="9B94DD4C-9352-3787-FDEE-F04B567FBCD8">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[correo paciente]]></comment>
+<generatorID>F088AC59-11F3-B50C-4869-08D854626F96</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel_pac" id="6AE26C1C-8B34-CFE6-1148-CC629E536756">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[ej:
++56912345678]]></comment>
+<generatorID>7D85810A-41E7-A232-6FD0-6C055428A98D</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73AB7F3E-2C2A-BD26-AC71-3AAAD3F25BF5" name="PACIENTE_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>D6128A6F-EE3E-FE8C-379B-D531427526F2</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4D44A3E-15CB-F9A1-6E07-BF1939BB5D20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

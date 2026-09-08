@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="849BD297-114E-2978-B8AE-27599997B831" name="PAGOS">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>ECDF460E-E047-E17C-41E1-B8F7F1A960D2</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pag" id="1CDD63B9-581A-690B-FA5B-A3684FB57B48">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>C137DEB2-8A8D-E75C-E9B8-4A64BF875C38</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mon_pag" id="74AF00E5-2982-28A3-9086-15B028072F43">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[monto pago ]]></comment>
+<generatorID>B88FC49C-4C6D-54C7-960D-E62B8A020560</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_pag" id="1A74B646-2727-C1CE-691E-1D50A6A4ADC6">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>605DD4AD-C177-6BD5-1430-631B242A1705</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_pag" id="40BC10E2-CAEC-A981-D5A9-FF5EDE64DCBC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>200C2A77-4E7A-E804-D44C-71258969A747</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONSULTA_id_con" id="2CF9D406-D7F2-A6A4-5317-32788705A098">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[id consulta]]></comment>
+<generatorID>BA3242B3-6CB6-5942-3741-7058F7661EB7</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6559460B-B486-7A9C-B031-B878EC13B082" referredColumn="07F964D7-C86F-2FB0-DC2D-7E640159D148"/>
+</associations>
+</Column>
+<Column name="METODO_PAGO_cod_met_pago" id="E3BDD584-FC46-FEFC-395C-DCAC44E436E0">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>4F2CB124-EF38-0FE2-F32D-8C8745D0272C</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B568F09B-E450-D5FC-6220-56805C044383" referredColumn="1A045506-E7FB-316D-A4BC-6EAD456816D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FA33462-B0E3-88DB-B195-EF1A6A887105" name="PAGOS_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>7B08F262-BBD9-40E4-C5D0-CA35CB8A0E14</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1CDD63B9-581A-690B-FA5B-A3684FB57B48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D65579A2-C0EC-4665-5ED5-FE0E002142FC" name="PAGOS_CONSULTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>3535FA17-795E-8DDD-4774-BA2FB28B0836</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CF9D406-D7F2-A6A4-5317-32788705A098"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0879D4B6-193A-9F3C-A079-A2001308FA99" name="PAGOS_METODO_PAGO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>57ACE1DB-2709-6279-6B49-8B513EB649D9</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3BDD584-FC46-FEFC-395C-DCAC44E436E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

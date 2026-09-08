@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BA2C868-1C0C-47C4-A01F-BAAFC81A1050" name="PERSONAL_VUELO">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>E9628BB8-6FC7-4817-B8E9-D2ED0757470C</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="run" id="A8FD127F-54F9-44F5-B448-3F96C0C68A8F">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>0E5A1DF6-6E2C-414F-8970-E4059434A015</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primer_nombre" id="81D0B1A8-856E-4399-9189-91B20DF14F55">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>829FAE69-389F-4AF9-8285-79B8D7DED161</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="segundo_nombre" id="E5CF3D80-5FAE-48BA-9D4B-40F1FB154018">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>12C8EF21-9EE4-4948-8CAD-90CEC79675F3</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="primer_apellido" id="395A62AB-C05F-41F6-BDEF-B58A5AA3BF5E">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>4CFBC7B3-CA78-4C7F-8BEC-CEAFF874DC01</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="segundo_apellido" id="1A817FDF-9370-4BDD-BA2D-09BB6BCDB978">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>F1766EE0-06AD-4640-9EEC-94CA9C563851</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="C4657088-92A8-40E4-B6D8-42D46AA08785">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>813980D7-0459-4FB1-86CB-2995F7393C8C</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="genero" id="8CB1095A-95EE-471C-B566-FEF72841F87C">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>10991D5F-7E47-4783-A6D1-BE9F535C38F9</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="57527DF5-F2EF-4851-909D-179034A1E4CA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>AE7FA4B9-512C-409C-B7C5-DD08CD44AC3B</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="F1D2181D-3848-4B2D-B00D-5AA939FB6FD8">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>92ED6311-1B8D-49A8-A45B-F8D11A69667C</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulo" id="D66C3656-7D3B-4C94-8A79-50A2A41F4267">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>0C9680F4-D4B5-44CB-89BA-A0E81F21B059</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="624B6F0F-3DCD-417F-B05D-83A51E554C75">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>B9322AAD-3BAB-47F8-89A0-0AE73AEE0D53</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="anios_servicio" id="9EBEA6AB-4157-42F4-B63B-5DE94E227113">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>B86CAEEA-295F-4587-852C-2432C8C0D4A4</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel" id="DC4B3B4C-101E-4100-AF35-DE8C2AAFAD39">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>792B929F-6266-44FD-8457-8627344E0A98</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97F79811-A4E9-4DF0-96FD-FC22E6B4F58E" name="PERSONAL_VUELO_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>E93FB32C-EC71-4C67-859F-F63525879797</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8FD127F-54F9-44F5-B448-3F96C0C68A8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

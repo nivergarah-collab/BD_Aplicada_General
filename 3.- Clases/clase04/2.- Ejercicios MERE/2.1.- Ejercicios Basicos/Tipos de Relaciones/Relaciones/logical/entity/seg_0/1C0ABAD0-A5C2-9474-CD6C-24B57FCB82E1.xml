@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1C0ABAD0-A5C2-9474-CD6C-24B57FCB82E1" name="REGION">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:45:01 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_region" id="8BC75F14-A22B-E8A1-3CAD-3B78503CDE6F">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:45:19 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_region" id="3C6960BD-958E-6883-2663-722102144640">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:45:37 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="8FB63547-909F-65B2-9B7C-9FACF76A8B29">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:51:45 UTC</createdTime>
+<comment><![CDATA[00000 - 99999 => precision 5]]></comment>
+<generatorID>FE63D711-9C31-765D-14EB-8CACD6C4298A</generatorID>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<referedAttribute>B7FB3262-B1E3-2FD7-8E3D-7DB3B5F2A2CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DE5841D5-FD12-9D31-AD93-63F39888F305" name="REGION PK">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:45:35 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8BC75F14-A22B-E8A1-3CAD-3B78503CDE6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

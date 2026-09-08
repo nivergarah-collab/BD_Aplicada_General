@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BFE2F5E1-5D00-368F-156E-141871D1CABA" name="CONSULTA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>2A10338A-DA9A-6A46-E45D-32DC81F83B34</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_con" id="07F964D7-C86F-2FB0-DC2D-7E640159D148">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[id consulta]]></comment>
+<generatorID>BE3BA426-E9DA-4FB0-12DC-C0CC5AE5B714</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fec_con" id="92499FBF-C4B0-B56E-6C9D-541AB7D8A30D">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[fecha consulta]]></comment>
+<generatorID>06E1974F-02C6-DB98-2541-7E85C8E0A023</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_con" id="21ED2291-78C9-1939-0D2E-C24B59A6CF88">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<comment><![CDATA[estado consulta]]></comment>
+<generatorID>5DE9EF98-C5C7-2B44-6D87-ADBB1D262C94</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MEDICO_run_med" id="E0028A88-E76A-396A-01E3-333AF5338BFC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>CB4B2F03-EEF2-F392-79F7-227659316532</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="120BDA32-B82D-5B84-5210-6454365B0A81" referredColumn="599CA5AA-098F-9714-538D-6E1F8306E00B"/>
+</associations>
+</Column>
+<Column name="SALA_cod_sal" id="77F54203-CDFE-0794-A107-1811CC87F97D">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>8940C6D6-A751-EB07-E14F-3C0F5CAB7D17</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4BF5FEF8-4809-F66F-20C6-C01BCC681CB0" referredColumn="C986E371-AB54-5282-B2C5-B1DB19B03646"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31AC4EA5-F3BF-9EC1-CC7E-364FE0C69B0B" name="CONSULTA_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>86DC1B36-A36C-C07E-9D1B-581DFE20A65B</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07F964D7-C86F-2FB0-DC2D-7E640159D148"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4C76E22-985C-BC75-17BA-2A0BACC143C5" name="CONSULTA_MEDICO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>2D3FE556-8520-F0B6-F430-FC21D31FE961</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0028A88-E76A-396A-01E3-333AF5338BFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BBD5CC5-A2D8-8B14-4590-0EB7B307AE1A" name="CONSULTA_SALA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>63EDC34B-CEC8-3956-B1C0-5C191A1D85CA</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F54203-CDFE-0794-A107-1811CC87F97D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

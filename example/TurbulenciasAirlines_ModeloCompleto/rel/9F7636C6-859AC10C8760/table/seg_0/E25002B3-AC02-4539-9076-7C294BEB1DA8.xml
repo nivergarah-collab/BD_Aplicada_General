@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E25002B3-AC02-4539-9076-7C294BEB1DA8" name="USOS_PISTA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VUELO_codigo_vuelo" id="0B9E6D34-6549-41F1-AAB6-3BB00E8912E0">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="410A6E68-716A-4D37-8A59-B66FD1650520" referredColumn="B6DD86E9-7736-40FB-A393-3C53D3E8DC0C"/>
+</associations>
+</Column>
+<Column name="PISTA_id_pista" id="DA1421DB-E76D-4B7C-ABEE-939332E8D5E4">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8A18FC4-84E4-470D-9BEF-9DF25096F0D7" referredColumn="F049926B-F2D7-41FB-A35A-27E5F9D358D2"/>
+</associations>
+</Column>
+<Column name="fecha_uso" id="2FA4F113-160C-4651-AE27-E2D31D04590E">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03154E13-DC77-4B99-8FEF-E84B01FDCF5A" name="USOS_PISTA_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B9E6D34-6549-41F1-AAB6-3BB00E8912E0"/>
+<colUsage columnID="DA1421DB-E76D-4B7C-ABEE-939332E8D5E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C698AB82-58CC-4C19-AADD-BD5850AABA6A" name="USOS_PISTA_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>BC0FCDCD-7CBF-4C26-B227-A69B1F1404C4</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B9E6D34-6549-41F1-AAB6-3BB00E8912E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0061E420-DAFD-458D-AD2E-183DA3FA7D43" name="USOS_PISTA_PISTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>BC0FCDCD-7CBF-4C26-B227-A69B1F1404C4</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA1421DB-E76D-4B7C-ABEE-939332E8D5E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

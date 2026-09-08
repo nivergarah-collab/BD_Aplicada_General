@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="POSEER" directorySegmentName="seg_0" id="E3B53200-2538-4EF1-B96E-1F5B9A28AF3F">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<sourcePk>C967E813-D858-44C9-84ED-D8731AD5960F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>posee</nameOnSource>
+<nameOnTarget>pertenece a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6E1B679E-7CD5-4F8C-B530-40A8D4620819</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2314DB8A-78E2-449E-8C89-ED5155BC7976</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

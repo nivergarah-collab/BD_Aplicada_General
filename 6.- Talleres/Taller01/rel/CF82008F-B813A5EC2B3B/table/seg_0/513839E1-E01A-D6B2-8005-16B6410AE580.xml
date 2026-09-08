@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="513839E1-E01A-D6B2-8005-16B6410AE580" name="EJERCER">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MEDICO_run_med" id="A81C2EE9-3A4E-C0DB-BB11-585505CD0DF6">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DDC298F-C2C0-5DF1-C93A-720FFFE6AE76" referredColumn="599CA5AA-098F-9714-538D-6E1F8306E00B"/>
+</associations>
+</Column>
+<Column name="ESPECIALIDAD_MEDICA_cod_esp_medica" id="556DFDA9-B6C9-430B-20B7-6BF4F5528469">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE88028D-EF8F-8DF8-36F4-BB328418F536" referredColumn="EF82CB0C-C9C8-5676-BF7A-892826FB5208"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C117118C-1B46-952E-9309-F7DAEE14C12A" name="EJERCER_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A81C2EE9-3A4E-C0DB-BB11-585505CD0DF6"/>
+<colUsage columnID="556DFDA9-B6C9-430B-20B7-6BF4F5528469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2ECDF45C-7391-8610-0823-983DDB9B6051" name="EJERCER_MEDICO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>9BFF97DB-FE8E-4118-5D2F-BDC5CA560952</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A81C2EE9-3A4E-C0DB-BB11-585505CD0DF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF4CBEF9-F16A-7204-3CF0-E77C8BD106A6" name="EJERCER_ESPECIALIDAD_MEDICA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>9BFF97DB-FE8E-4118-5D2F-BDC5CA560952</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="556DFDA9-B6C9-430B-20B7-6BF4F5528469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

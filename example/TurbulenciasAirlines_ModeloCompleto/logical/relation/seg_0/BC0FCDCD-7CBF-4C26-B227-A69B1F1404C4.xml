@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTILIZA_PISTA" directorySegmentName="seg_0" id="BC0FCDCD-7CBF-4C26-B227-A69B1F1404C4">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>utiliza</nameOnSource>
+<nameOnTarget>es utilizada por</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A443FBA9-24C8-49CA-880F-6A9B15614856</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BEBD8D9-6784-473A-B454-7E95BC1B4B85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

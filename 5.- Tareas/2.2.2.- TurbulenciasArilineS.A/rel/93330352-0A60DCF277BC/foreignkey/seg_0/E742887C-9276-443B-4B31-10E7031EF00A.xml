@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E742887C-9276-443B-4B31-10E7031EF00A" containerWithKeyObject="C7505EC1-D93E-17D6-EEB3-F20D20743FC2" localFKIndex="22A471B4-C58D-DB41-13D2-199028382AF0" name="MANTENCIONE_PISTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>410F33E5-6BAB-36C1-7A30-BC9EDED06AFA</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<referredTableLongName>PISTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4E69D430-12DA-4031-B840-4047B16DCA0C</referredTableID>
+<keyObject>0AEB4CF8-F200-0C13-3E71-9718F6399087</keyObject>
+<referredKeyID>0AEB4CF8-F200-0C13-3E71-9718F6399087</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>numero</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

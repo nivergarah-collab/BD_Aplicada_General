@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DERIVAR" directorySegmentName="seg_0" id="D552A6B4-7780-7A71-EB8D-D1D8FFBB9A7B">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:51:49 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>C3D3CCCB-8F40-25F7-A9C9-D1CED51FFADF</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>deriva en</nameOnSource>
+<nameOnTarget>es derivado de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2CD89B67-FEA5-347C-FFAF-D8A57A63B58E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ED8D37AE-8EFE-0702-2EA6-C10DBFF57D5C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

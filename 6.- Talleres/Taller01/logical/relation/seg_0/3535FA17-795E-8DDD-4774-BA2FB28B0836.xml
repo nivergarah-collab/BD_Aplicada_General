@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ASOCIAR" directorySegmentName="seg_0" id="3535FA17-795E-8DDD-4774-BA2FB28B0836">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:57:16 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>86DC1B36-A36C-C07E-9D1B-581DFE20A65B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>esta asociado</nameOnSource>
+<nameOnTarget>esta asiciado</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A10338A-DA9A-6A46-E45D-32DC81F83B34</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>ECDF460E-E047-E17C-41E1-B8F7F1A960D2</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

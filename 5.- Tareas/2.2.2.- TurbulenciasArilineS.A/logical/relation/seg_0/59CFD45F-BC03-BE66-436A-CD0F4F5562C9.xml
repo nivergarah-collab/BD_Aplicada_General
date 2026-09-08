@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ORGANIZAR" directorySegmentName="seg_0" id="59CFD45F-BC03-BE66-436A-CD0F4F5562C9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:46:16 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>es organizado</nameOnSource>
+<nameOnTarget>organiza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>929F029C-E2C9-70AE-5F8E-71AEEF17C400</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00194ECA-5568-979E-FDA4-CF9B51FA082F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTENER" directorySegmentName="seg_0" id="FE63D711-9C31-765D-14EB-8CACD6C4298A">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:51:22 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<sourcePk>DE5841D5-FD12-9D31-AD93-63F39888F305</sourcePk>
+<targetPk>07662798-5A22-8511-37D3-24E2E13503EE</targetPk>
+<identifying>false</identifying>
+<nameOnSource>es contenida </nameOnSource>
+<nameOnTarget>contiene</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>1C0ABAD0-A5C2-9474-CD6C-24B57FCB82E1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>48B1A825-2E51-33D3-BBCF-19C7C0220249</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

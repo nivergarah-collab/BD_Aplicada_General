@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B568F09B-E450-D5FC-6220-56805C044383" containerWithKeyObject="849BD297-114E-2978-B8AE-27599997B831" localFKIndex="0879D4B6-193A-9F3C-A079-A2001308FA99" name="PAGOS_METODO_PAGO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>57ACE1DB-2709-6279-6B49-8B513EB649D9</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<referredTableLongName>METODO_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>97B556DA-9E74-A060-2455-4C01AE7AA63A</referredTableID>
+<keyObject>7BBB2050-DE58-E602-51DF-48335C95E4ED</keyObject>
+<referredKeyID>7BBB2050-DE58-E602-51DF-48335C95E4ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_met_pago</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

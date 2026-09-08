@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="991128D8-998A-6AD5-91C2-8231111238AF" name="ASISTIR">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONSULTA_id_con" id="553283E7-FD16-6C3B-01DA-F042D44DBDCE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C36F11E4-0F33-DA85-19A6-30A12AB9352F" referredColumn="07F964D7-C86F-2FB0-DC2D-7E640159D148"/>
+</associations>
+</Column>
+<Column name="PACIENTE_run_pac" id="EF190457-9DEA-ACD5-4FCD-36330D5F16A1">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC677179-818A-B53C-0A9F-AF632A714D79" referredColumn="B4D44A3E-15CB-F9A1-6E07-BF1939BB5D20"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92782FE6-9817-DA9E-8398-E84209C50F66" name="ASISTIR_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="553283E7-FD16-6C3B-01DA-F042D44DBDCE"/>
+<colUsage columnID="EF190457-9DEA-ACD5-4FCD-36330D5F16A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF9DD6DD-F680-7187-B5DB-1465A6BA67B1" name="ASISTIR_CONSULTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>4F959E50-558C-C96E-AD60-61CB80014E5A</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="553283E7-FD16-6C3B-01DA-F042D44DBDCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F40C3537-CE95-BF91-634C-DDC888C13914" name="ASISTIR_PACIENTE_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 01:12:38 UTC</createdTime>
+<generatorID>4F959E50-558C-C96E-AD60-61CB80014E5A</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EF190457-9DEA-ACD5-4FCD-36330D5F16A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

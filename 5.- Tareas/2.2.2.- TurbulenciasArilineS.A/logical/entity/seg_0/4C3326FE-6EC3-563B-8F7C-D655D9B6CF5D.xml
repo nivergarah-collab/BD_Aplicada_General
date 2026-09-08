@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4C3326FE-6EC3-563B-8F7C-D655D9B6CF5D" name="AEROPUERTO">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:02 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code" id="38B5F3DF-62DA-3438-86C0-43B3E0CE9CEE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:15 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="802DA60D-0FC4-9B39-9426-8C4A680CC554">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:15 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dirección" id="0CB365C8-B952-BAC6-2CA8-36641285F763">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:15 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oficina_oirs" id="C652BE77-A13A-64D1-5A31-382EA6950169">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:15 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oficina_aduana" id="5342CA85-23D2-2CDC-338F-B027D0883F37">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:12:16 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oficina_policia" id="1D9D5402-FE73-115E-BDBD-6DEDD058D9F9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:18:14 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ciudad" id="CB0B5371-3FC1-360C-4C62-DFE864BC3622">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:53:36 UTC</createdTime>
+<generatorID>E1A11355-4B63-4E9F-532C-7D5DDA1A64D2</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<referedAttribute>59F95727-5574-11B8-C981-F942485E635E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB526B1B-AB02-03A8-4CC3-172D9575FB36" name="AEROPUERTOS PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:13:03 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>38B5F3DF-62DA-3438-86C0-43B3E0CE9CEE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

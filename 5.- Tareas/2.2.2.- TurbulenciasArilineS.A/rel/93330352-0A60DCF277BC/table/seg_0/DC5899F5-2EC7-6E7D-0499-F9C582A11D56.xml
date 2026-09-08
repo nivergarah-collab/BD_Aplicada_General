@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC5899F5-2EC7-6E7D-0499-F9C582A11D56" name="PARTICIPAR">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PERSONAL_VUELO_run" id="62EDA8CD-1575-2C37-D6EA-E9386028D0F2">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25E30764-C183-A584-CCCD-553D1C91065B" referredColumn="D00C957C-91D9-39D9-8DF1-A3FF3C5133D5"/>
+</associations>
+</Column>
+<Column name="PROGRAMAS_DE_VUELO_PROGRAMAS_DE_VUELO_ID" id="EE8DE928-E60D-95A8-2A80-326B2054FFB9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0D2772E-7B2A-84AE-B13F-B6DCDA01A8E8" referredColumn="4D55AB4C-3EC9-B7A9-D4C1-559CB6B1E3B5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F07EB56A-D0A2-6F26-577D-9164A8E1A7B6" name="PARTICIPAR_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62EDA8CD-1575-2C37-D6EA-E9386028D0F2"/>
+<colUsage columnID="EE8DE928-E60D-95A8-2A80-326B2054FFB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F910CC7-5E2C-7430-A169-E07F7DF7E15F" name="PARTICIPAR_PERSONAL_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>34EFD92F-2AA2-D83C-DBBA-604A0B754C3B</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62EDA8CD-1575-2C37-D6EA-E9386028D0F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="941902B9-52C6-BD9B-7347-DEB64DFCB9AC" name="PARTICIPAR_PROGRAMAS_DE_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>34EFD92F-2AA2-D83C-DBBA-604A0B754C3B</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE8DE928-E60D-95A8-2A80-326B2054FFB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

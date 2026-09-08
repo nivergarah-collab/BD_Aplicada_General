@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VIVIR" directorySegmentName="seg_0" id="E04F59D2-3E7F-21B6-79AB-C937A0AFC774">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:41:01 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>27380799-E9D9-3480-F4AA-AC8107967A80</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es vivida</nameOnSource>
+<nameOnTarget>viven</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AE1AC1FA-C4BF-06F5-F825-4F269D0DCB76</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FE55DA3F-22C1-23F7-16C3-5BBA9F1768C5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

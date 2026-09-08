@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FE55DA3F-22C1-23F7-16C3-5BBA9F1768C5" name="PASAJERO">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:21:08 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="run" id="18BA4F48-450A-95B9-E455-3DAB9756BEBE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:21:18 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_name" id="15C264B3-C53B-7C71-1CD3-14A0F834F497">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:32:58 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="middle_name" id="6B71F016-FF78-1C73-D637-62C80CAD5DFD">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:32:58 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="first_last_name" id="B0B2EA4D-755C-156A-6BA6-866BDB92250F">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:32:58 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="second_last_name" id="6E1FDAD7-63F2-9874-2C8A-94F2EFF23C21">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:32:59 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birth_date" id="C32DFBDF-5DF9-80BC-5DD0-02D63C9053F3">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:32:59 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gender" id="85DAA53E-9F75-448D-F612-D54395EA1A8C">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:36:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[Debido a estandares modernos se dejara como opcional]]></commentInRDBMS>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT023</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="FD3AB17C-7523-416C-1386-20AEE8FD710D">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:36:25 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="EAAF6093-7ADD-CB28-60C3-0079A213ADB9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[al igual que phone tambien sera obligatorio pues necesitamos poder contactarnos con la persona]]></commentInRDBMS>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="CDD783B8-93B2-BB67-E5FC-6499B3486FC9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:36:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[se usara numeric de precision 11 debido a que se asumira que el programa otorgara el +]]></commentInRDBMS>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ciudad" id="5CBECD93-7A8B-FE93-B7FF-DAC6022009FC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:41:01 UTC</createdTime>
+<generatorID>E04F59D2-3E7F-21B6-79AB-C937A0AFC774</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<referedAttribute>59F95727-5574-11B8-C981-F942485E635E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="code" id="32CA3F95-A37C-6DA9-3241-B8BA2539C68F">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:37:32 UTC</createdTime>
+<generatorID>BA9C4574-0CAD-1E03-225E-734393DF30FA</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<referedAttribute>870C0442-5B20-0B29-2F2C-D3627F1FC854</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="58F0D18B-F0BC-E00A-4D71-979BE9AE116E" name="PASAJEROS PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:21:27 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18BA4F48-450A-95B9-E455-3DAB9756BEBE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

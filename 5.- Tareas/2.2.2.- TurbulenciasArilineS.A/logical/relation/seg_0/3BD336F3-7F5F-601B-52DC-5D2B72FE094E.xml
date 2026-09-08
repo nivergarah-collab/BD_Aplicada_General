@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FORMAR" directorySegmentName="seg_0" id="3BD336F3-7F5F-601B-52DC-5D2B72FE094E">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:50:42 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>forma</nameOnSource>
+<nameOnTarget>es formado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>60FF9748-B6C8-2D2A-9628-5D76D7997E01</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>929F029C-E2C9-70AE-5F8E-71AEEF17C400</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

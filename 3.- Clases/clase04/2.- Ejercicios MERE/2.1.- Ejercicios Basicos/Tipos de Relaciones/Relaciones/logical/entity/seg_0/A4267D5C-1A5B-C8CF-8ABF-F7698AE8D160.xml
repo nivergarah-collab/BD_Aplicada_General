@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4267D5C-1A5B-C8CF-8ABF-F7698AE8D160" name="BANDERA">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:28:37 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_bandera" id="1E133B52-5234-4705-7C96-A93524B553B4">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:28:56 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_bandera" id="E55B27A9-3731-2C4B-9087-151814633D62">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:29:29 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imagen_bandera" id="83E302C7-AD22-C5AC-5308-58F30E2E4BC8">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:30:28 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="E9C8EE2C-4680-5922-AE84-AC1E793C91A0">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:35:14 UTC</createdTime>
+<comment><![CDATA[00000 - 99999 => precision 5]]></comment>
+<generatorID>27CAD986-EA37-75AC-7FA6-F508F065EA44</generatorID>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<referedAttribute>0AA16AFD-A98D-EB1C-D815-8A0D76B823EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93F00CA6-D1E2-B77B-ABBC-0A741D5C633F" name="BANDERA PK">
+<createdBy>SJ-Alumno</createdBy>
+<createdTime>2026-08-17 14:29:13 UTC</createdTime>
+<ownerDesignName>Relaciones</ownerDesignName>
+<engineerTo>
+<item key="B7A2D72D-13E9-489C-2495-9E127F284678" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E133B52-5234-4705-7C96-A93524B553B4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turbulencias Airlines S.A. — Modelo Lógico y Relacional</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --ink:#1c2430; --muted:#5b6674;
+    --line:#e2e6ec; --accent:#2f5fb3; --accent-soft:#eaf0fb;
+    --pk:#b3541e; --fk:#2f6f4f;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Segoe UI",Calibri,system-ui,-apple-system,sans-serif;line-height:1.55;}
+  .wrap{max-width:1100px;margin:0 auto;padding:32px 24px 80px;}
+  header.title{border-bottom:3px solid var(--accent);padding-bottom:18px;margin-bottom:28px;}
+  header.title h1{margin:0 0 6px;font-size:1.6rem;color:var(--accent);}
+  header.title p{margin:2px 0;color:var(--muted);font-size:.95rem;}
+  h2{font-size:1.25rem;color:var(--accent);border-left:5px solid var(--accent);padding-left:10px;margin:40px 0 14px;}
+  h3{font-size:1.05rem;margin:22px 0 8px;color:var(--ink);}
+  p{color:#333;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin-bottom:18px;}
+  .mermaid{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;overflow-x:auto;}
+  table{border-collapse:collapse;width:100%;margin:10px 0 6px;font-size:.92rem;}
+  th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;}
+  th{background:var(--accent-soft);color:var(--accent);font-weight:600;}
+  tr:nth-child(even) td{background:#fbfbfd;}
+  code{background:#eef1f6;padding:1px 6px;border-radius:4px;font-size:.88em;}
+  .pk{color:var(--pk);font-weight:700;}
+  .fk{color:var(--fk);font-weight:600;}
+  .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.03em;
+    padding:2px 8px;border-radius:20px;margin-left:6px;vertical-align:middle;}
+  .tag.pk{background:#fbe8da;color:var(--pk);}
+  .tag.fk{background:#e2f2e8;color:var(--fk);}
+  .tag.assoc{background:#eef0ff;color:#3b3fb0;}
+  .note{background:#fff8e6;border:1px solid #f0ddaa;border-radius:8px;padding:12px 16px;margin:14px 0;font-size:.93rem;}
+  .note b{color:#8a6100;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:820px){.grid2{grid-template-columns:1fr;}}
+  ul{padding-left:22px;}
+  li{margin-bottom:4px;}
+  footer{margin-top:50px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="title">
+  <h1>Sistema de Gestión Aeroportuaria y de Vuelos</h1>
+  <p><b>Empresa:</b> Turbulencias Airlines S.A. — Modelamiento MERE</p>
+  <p><b>Entregables:</b> Diagrama lógico y Diagrama relacional (sin creación de base de datos ni sentencias SQL)</p>
+</header>
+
+<section class="panel">
+  <h2 style="margin-top:0;border:0;padding-left:0;">Resumen del caso</h2>
+  <p>Turbulencias Airlines S.A. necesita ordenar la información territorial (países, regiones, ciudades),
+  de personas (pasajeros, personal de vuelo, personal de aeropuerto), de operación (aerolíneas, aviones,
+  vuelos, programas de vuelo) y de infraestructura (aeropuertos, pistas, servicios de mantención). El modelo
+  debe resolver correctamente tres relaciones muchos‑a‑muchos: <b>pasajeros–vuelos</b>, <b>vuelos–pistas</b>
+  (con atributo <code>fecha_uso</code>) y <b>personal de vuelo–programas de vuelo</b> (con atributo
+  <code>período</code>), tal como exige el enunciado.</p>
+</section>
+
+<h2>1. Diagrama lógico</h2>
+<p>Representa las entidades del negocio, sus atributos principales, identificadores y relaciones con sus
+cardinalidades, desde una mirada conceptual (sin tipos de dato técnicos ni nombres de tablas físicas).</p>
+
+<div class="mermaid">
+erDiagram
+    PAIS ||--o{ REGION : "posee"
+    REGION ||--o{ CIUDAD : "posee"
+    CIUDAD ||--o{ PASAJERO : "es residencia de"
+    CIUDAD ||--o{ AEROPUERTO : "ubica a"
+    AEROLINEA ||--o{ AVION : "posee"
+    AVION ||--o{ VUELO : "realiza"
+    PROGRAMA_VUELO ||--o{ VUELO : "organiza"
+    AEROPUERTO ||--o{ PISTA : "administra"
+    AEROPUERTO ||--o{ PERSONAL_AEROPUERTO : "emplea"
+    PISTA ||--o{ SERVICIO_MANTENCION : "recibe"
+    PASAJERO ||--o{ ABORDAJE : "genera"
+    VUELO ||--o{ ABORDAJE : "registra"
+    VUELO ||--o{ USO_PISTA : "genera"
+    PISTA ||--o{ USO_PISTA : "registra"
+    PERSONAL_VUELO ||--o{ PARTICIPACION_PROGRAMA : "genera"
+    PROGRAMA_VUELO ||--o{ PARTICIPACION_PROGRAMA : "registra"
+
+    PAIS {
+        numero id_pais PK
+        texto nombre
+    }
+    REGION {
+        numero id_region PK
+        texto nombre
+        numero id_pais FK
+    }
+    CIUDAD {
+        numero id_ciudad PK
+        texto nombre
+        numero id_region FK
+    }
+    PASAJERO {
+        texto run PK
+        texto primer_nombre
+        texto segundo_nombre
+        texto primer_apellido
+        texto segundo_apellido
+        fecha fecha_nacimiento
+        texto genero
+        texto direccion
+        texto correo_electronico
+        texto telefono
+        numero id_ciudad FK
+    }
+    PERSONAL_VUELO {
+        texto run PK
+        texto primer_nombre
+        texto segundo_nombre
+        texto primer_apellido
+        texto segundo_apellido
+        fecha fecha_nacimiento
+        texto genero
+        texto direccion
+        texto telefono
+        texto titulo
+        texto cargo
+        numero anios_servicio
+        texto nivel
+    }
+    PERSONAL_AEROPUERTO {
+        texto run PK
+        texto primer_nombre
+        texto segundo_nombre
+        texto primer_apellido
+        texto segundo_apellido
+        fecha fecha_nacimiento
+        texto genero
+        texto direccion
+        texto telefono
+        texto titulo
+        texto cargo
+        numero anios_servicio
+        texto nivel
+        texto area_desempeno
+        texto id_aeropuerto FK
+    }
+    AEROLINEA {
+        numero id_aerolinea PK
+        texto nombre
+        texto direccion
+        texto correo_institucional
+        texto telefono
+        texto logo
+    }
+    AVION {
+        texto matricula PK
+        texto marca
+        texto modelo
+        numero anio
+        numero cantidad_motores
+        numero cantidad_asientos
+        numero largo
+        texto codigo_caja_negra
+        numero id_aerolinea FK
+    }
+    PROGRAMA_VUELO {
+        numero id_programa PK
+        texto nombre
+    }
+    VUELO {
+        texto codigo_vuelo PK
+        fecha_hora fecha_hora_despegue
+        fecha_hora fecha_hora_aterrizaje
+        numero cantidad_pasajeros
+        numero cantidad_plazas_vacantes
+        texto matricula_avion FK
+        numero id_programa FK
+    }
+    AEROPUERTO {
+        texto id_aeropuerto PK
+        texto nombre
+        texto direccion
+        texto num_oficina_oirs
+        texto num_oficina_aduana
+        texto num_oficina_policia_internacional
+        numero id_ciudad FK
+    }
+    PISTA {
+        numero id_pista PK
+        texto numero_pista
+        texto nombre
+        texto dimensiones
+        texto estado
+        texto id_aeropuerto FK
+    }
+    SERVICIO_MANTENCION {
+        numero id_servicio PK
+        texto tipo_mantencion
+        texto observaciones
+        numero id_pista FK
+    }
+    ABORDAJE {
+        texto run_pasajero PK_FK
+        texto codigo_vuelo PK_FK
+    }
+    USO_PISTA {
+        texto codigo_vuelo PK_FK
+        numero id_pista PK_FK
+        fecha fecha_uso
+    }
+    PARTICIPACION_PROGRAMA {
+        texto run_personal_vuelo PK_FK
+        numero id_programa PK_FK
+        texto periodo PK
+    }
+</div>
+
+<h2>2. Diagrama relacional</h2>
+<p>Traduce el modelo lógico a tablas físicas, con tipos de datos (notación Oracle), claves primarias (PK),
+claves foráneas (FK) y las tres tablas asociativas que resuelven las relaciones muchos‑a‑muchos.</p>
+
+<div class="mermaid">
+erDiagram
+    PAISES ||--o{ REGIONES : FK_ID_PAIS
+    REGIONES ||--o{ CIUDADES : FK_ID_REGION
+    CIUDADES ||--o{ PASAJEROS : FK_ID_CIUDAD
+    CIUDADES ||--o{ AEROPUERTOS : FK_ID_CIUDAD
+    AEROLINEAS ||--o{ AVIONES : FK_ID_AEROLINEA
+    AVIONES ||--o{ VUELOS : FK_MATRICULA_AVION
+    PROGRAMAS_VUELO ||--o{ VUELOS : FK_ID_PROGRAMA
+    AEROPUERTOS ||--o{ PISTAS : FK_ID_AEROPUERTO
+    AEROPUERTOS ||--o{ PERSONAL_AEROPUERTO : FK_ID_AEROPUERTO
+    PISTAS ||--o{ SERVICIOS_MANTENCION : FK_ID_PISTA
+    PASAJEROS ||--o{ ABORDAJES : FK_RUN_PASAJERO
+    VUELOS ||--o{ ABORDAJES : FK_CODIGO_VUELO
+    VUELOS ||--o{ USOS_PISTA : FK_CODIGO_VUELO
+    PISTAS ||--o{ USOS_PISTA : FK_ID_PISTA
+    PERSONAL_VUELO ||--o{ PARTICIPACIONES_PROGRAMA : FK_RUN_PERSONAL_VUELO
+    PROGRAMAS_VUELO ||--o{ PARTICIPACIONES_PROGRAMA : FK_ID_PROGRAMA
+
+    PAISES {
+        NUMBER id_pais PK
+        VARCHAR2_100 nombre
+    }
+    REGIONES {
+        NUMBER id_region PK
+        VARCHAR2_100 nombre
+        NUMBER id_pais FK
+    }
+    CIUDADES {
+        NUMBER id_ciudad PK
+        VARCHAR2_100 nombre
+        NUMBER id_region FK
+    }
+    PASAJEROS {
+        VARCHAR2_12 run PK
+        VARCHAR2_50 primer_nombre
+        VARCHAR2_50 segundo_nombre
+        VARCHAR2_50 primer_apellido
+        VARCHAR2_50 segundo_apellido
+        DATE fecha_nacimiento
+        VARCHAR2_15 genero
+        VARCHAR2_150 direccion
+        VARCHAR2_150 correo_electronico
+        VARCHAR2_20 telefono
+        NUMBER id_ciudad FK
+    }
+    PERSONAL_VUELO {
+        VARCHAR2_12 run PK
+        VARCHAR2_50 primer_nombre
+        VARCHAR2_50 segundo_nombre
+        VARCHAR2_50 primer_apellido
+        VARCHAR2_50 segundo_apellido
+        DATE fecha_nacimiento
+        VARCHAR2_15 genero
+        VARCHAR2_150 direccion
+        VARCHAR2_20 telefono
+        VARCHAR2_100 titulo
+        VARCHAR2_100 cargo
+        NUMBER_3 anios_servicio
+        VARCHAR2_30 nivel
+    }
+    PERSONAL_AEROPUERTO {
+        VARCHAR2_12 run PK
+        VARCHAR2_50 primer_nombre
+        VARCHAR2_50 segundo_nombre
+        VARCHAR2_50 primer_apellido
+        VARCHAR2_50 segundo_apellido
+        DATE fecha_nacimiento
+        VARCHAR2_15 genero
+        VARCHAR2_150 direccion
+        VARCHAR2_20 telefono
+        VARCHAR2_100 titulo
+        VARCHAR2_100 cargo
+        NUMBER_3 anios_servicio
+        VARCHAR2_30 nivel
+        VARCHAR2_100 area_desempeno
+        VARCHAR2_10 id_aeropuerto FK
+    }
+    AEROLINEAS {
+        NUMBER id_aerolinea PK
+        VARCHAR2_100 nombre
+        VARCHAR2_150 direccion
+        VARCHAR2_150 correo_institucional
+        VARCHAR2_20 telefono
+        VARCHAR2_255 logo
+    }
+    AVIONES {
+        VARCHAR2_10 matricula PK
+        VARCHAR2_50 marca
+        VARCHAR2_50 modelo
+        NUMBER_4 anio
+        NUMBER_1 cantidad_motores
+        NUMBER_4 cantidad_asientos
+        NUMBER_5_2 largo_metros
+        VARCHAR2_30 codigo_caja_negra
+        NUMBER id_aerolinea FK
+    }
+    PROGRAMAS_VUELO {
+        NUMBER id_programa PK
+        VARCHAR2_100 nombre
+    }
+    VUELOS {
+        VARCHAR2_10 codigo_vuelo PK
+        DATE fecha_hora_despegue
+        DATE fecha_hora_aterrizaje
+        NUMBER_4 cantidad_pasajeros
+        NUMBER_4 cantidad_plazas_vacantes
+        VARCHAR2_10 matricula_avion FK
+        NUMBER id_programa FK "opcional"
+    }
+    AEROPUERTOS {
+        VARCHAR2_10 id_aeropuerto PK
+        VARCHAR2_100 nombre
+        VARCHAR2_150 direccion
+        VARCHAR2_20 num_oficina_oirs
+        VARCHAR2_20 num_oficina_aduana
+        VARCHAR2_20 num_oficina_policia_internacional
+        NUMBER id_ciudad FK
+    }
+    PISTAS {
+        NUMBER id_pista PK
+        VARCHAR2_10 numero_pista
+        VARCHAR2_50 nombre
+        VARCHAR2_50 dimensiones
+        VARCHAR2_20 estado
+        VARCHAR2_10 id_aeropuerto FK
+    }
+    SERVICIOS_MANTENCION {
+        NUMBER id_servicio PK
+        VARCHAR2_50 tipo_mantencion
+        VARCHAR2_300 observaciones
+        NUMBER id_pista FK
+    }
+    ABORDAJES {
+        VARCHAR2_12 run_pasajero PK_FK
+        VARCHAR2_10 codigo_vuelo PK_FK
+    }
+    USOS_PISTA {
+        VARCHAR2_10 codigo_vuelo PK_FK
+        NUMBER id_pista PK_FK
+        DATE fecha_uso
+    }
+    PARTICIPACIONES_PROGRAMA {
+        VARCHAR2_12 run_personal_vuelo PK_FK
+        NUMBER id_programa PK_FK
+        VARCHAR2_20 periodo PK
+    }
+</div>
+
+<h2>3. Diccionario de entidades / tablas</h2>
+
+<h3>Territorio</h3>
+<table>
+<tr><th>Tabla</th><th>Columna</th><th>Tipo</th><th>Llave</th><th>Descripción</th></tr>
+<tr><td rowspan="2"><b>PAISES</b></td><td>id_pais</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador del país</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre del país</td></tr>
+<tr><td rowspan="3"><b>REGIONES</b></td><td>id_region</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador de la región</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre de la región</td></tr>
+<tr><td>id_pais</td><td>NUMBER</td><td class="fk">FK</td><td>País al que pertenece</td></tr>
+<tr><td rowspan="3"><b>CIUDADES</b></td><td>id_ciudad</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador de la ciudad</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre de la ciudad</td></tr>
+<tr><td>id_region</td><td>NUMBER</td><td class="fk">FK</td><td>Región a la que pertenece</td></tr>
+</table>
+
+<h3>Personas</h3>
+<table>
+<tr><th>Tabla</th><th>Columna</th><th>Tipo</th><th>Llave</th><th>Descripción</th></tr>
+<tr><td rowspan="11"><b>PASAJEROS</b></td><td>run</td><td>VARCHAR2(12)</td><td class="pk">PK</td><td>RUN del pasajero</td></tr>
+<tr><td>primer_nombre / segundo_nombre</td><td>VARCHAR2(50)</td><td></td><td>Nombres</td></tr>
+<tr><td>primer_apellido / segundo_apellido</td><td>VARCHAR2(50)</td><td></td><td>Apellidos</td></tr>
+<tr><td>fecha_nacimiento</td><td>DATE</td><td></td><td>Fecha de nacimiento</td></tr>
+<tr><td>genero</td><td>VARCHAR2(15)</td><td></td><td>Género</td></tr>
+<tr><td>direccion</td><td>VARCHAR2(150)</td><td></td><td>Dirección</td></tr>
+<tr><td>correo_electronico</td><td>VARCHAR2(150)</td><td></td><td>Correo del pasajero</td></tr>
+<tr><td>telefono</td><td>VARCHAR2(20)</td><td></td><td>Teléfono</td></tr>
+<tr><td>id_ciudad</td><td>NUMBER</td><td class="fk">FK</td><td>Ciudad de residencia</td></tr>
+<tr><td rowspan="11"><b>PERSONAL_VUELO</b></td><td>run</td><td>VARCHAR2(12)</td><td class="pk">PK</td><td>RUN del funcionario de vuelo</td></tr>
+<tr><td>primer_nombre / segundo_nombre / primer_apellido / segundo_apellido</td><td>VARCHAR2(50)</td><td></td><td>Datos personales</td></tr>
+<tr><td>fecha_nacimiento</td><td>DATE</td><td></td><td>Fecha de nacimiento</td></tr>
+<tr><td>genero</td><td>VARCHAR2(15)</td><td></td><td>Género</td></tr>
+<tr><td>direccion</td><td>VARCHAR2(150)</td><td></td><td>Dirección</td></tr>
+<tr><td>telefono</td><td>VARCHAR2(20)</td><td></td><td>Teléfono</td></tr>
+<tr><td>titulo</td><td>VARCHAR2(100)</td><td></td><td>Título profesional (piloto, copiloto, técnico, etc.)</td></tr>
+<tr><td>cargo</td><td>VARCHAR2(100)</td><td></td><td>Cargo dentro de la tripulación</td></tr>
+<tr><td>anios_servicio</td><td>NUMBER(3)</td><td></td><td>Años de servicio</td></tr>
+<tr><td>nivel</td><td>VARCHAR2(30)</td><td></td><td>Nivel/categoría del funcionario</td></tr>
+<tr><td rowspan="13"><b>PERSONAL_AEROPUERTO</b></td><td>run</td><td>VARCHAR2(12)</td><td class="pk">PK</td><td>RUN del funcionario de aeropuerto</td></tr>
+<tr><td>primer_nombre / segundo_nombre / primer_apellido / segundo_apellido</td><td>VARCHAR2(50)</td><td></td><td>Datos personales</td></tr>
+<tr><td>fecha_nacimiento</td><td>DATE</td><td></td><td>Fecha de nacimiento</td></tr>
+<tr><td>genero</td><td>VARCHAR2(15)</td><td></td><td>Género</td></tr>
+<tr><td>direccion</td><td>VARCHAR2(150)</td><td></td><td>Dirección</td></tr>
+<tr><td>telefono</td><td>VARCHAR2(20)</td><td></td><td>Teléfono</td></tr>
+<tr><td>titulo</td><td>VARCHAR2(100)</td><td></td><td>Título profesional</td></tr>
+<tr><td>cargo</td><td>VARCHAR2(100)</td><td></td><td>Cargo</td></tr>
+<tr><td>anios_servicio</td><td>NUMBER(3)</td><td></td><td>Años de servicio</td></tr>
+<tr><td>nivel</td><td>VARCHAR2(30)</td><td></td><td>Nivel del funcionario</td></tr>
+<tr><td>area_desempeno</td><td>VARCHAR2(100)</td><td></td><td>Área de desempeño dentro del aeropuerto</td></tr>
+<tr><td>id_aeropuerto</td><td>VARCHAR2(10)</td><td class="fk">FK</td><td>Aeropuerto donde trabaja</td></tr>
+</table>
+
+<h3>Operación aérea</h3>
+<table>
+<tr><th>Tabla</th><th>Columna</th><th>Tipo</th><th>Llave</th><th>Descripción</th></tr>
+<tr><td rowspan="6"><b>AEROLINEAS</b></td><td>id_aerolinea</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador de la aerolínea</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre de la aerolínea</td></tr>
+<tr><td>direccion</td><td>VARCHAR2(150)</td><td></td><td>Dirección</td></tr>
+<tr><td>correo_institucional</td><td>VARCHAR2(150)</td><td></td><td>Correo institucional</td></tr>
+<tr><td>telefono</td><td>VARCHAR2(20)</td><td></td><td>Teléfono</td></tr>
+<tr><td>logo</td><td>VARCHAR2(255)</td><td></td><td>Referencia/ruta del logo</td></tr>
+<tr><td rowspan="9"><b>AVIONES</b></td><td>matricula</td><td>VARCHAR2(10)</td><td class="pk">PK</td><td>Matrícula del avión</td></tr>
+<tr><td>marca</td><td>VARCHAR2(50)</td><td></td><td>Marca</td></tr>
+<tr><td>modelo</td><td>VARCHAR2(50)</td><td></td><td>Modelo</td></tr>
+<tr><td>anio</td><td>NUMBER(4)</td><td></td><td>Año de fabricación</td></tr>
+<tr><td>cantidad_motores</td><td>NUMBER(1)</td><td></td><td>Cantidad de motores</td></tr>
+<tr><td>cantidad_asientos</td><td>NUMBER(4)</td><td></td><td>Cantidad de asientos</td></tr>
+<tr><td>largo_metros</td><td>NUMBER(5,2)</td><td></td><td>Largo del avión</td></tr>
+<tr><td>codigo_caja_negra</td><td>VARCHAR2(30)</td><td></td><td>Código de la caja negra</td></tr>
+<tr><td>id_aerolinea</td><td>NUMBER</td><td class="fk">FK</td><td>Aerolínea propietaria</td></tr>
+<tr><td rowspan="2"><b>PROGRAMAS_VUELO</b></td><td>id_programa</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador del programa</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre del programa de vuelo</td></tr>
+<tr><td rowspan="6"><b>VUELOS</b></td><td>codigo_vuelo</td><td>VARCHAR2(10)</td><td class="pk">PK</td><td>Código del vuelo</td></tr>
+<tr><td>fecha_hora_despegue</td><td>DATE</td><td></td><td>Fecha y hora de despegue</td></tr>
+<tr><td>fecha_hora_aterrizaje</td><td>DATE</td><td></td><td>Fecha y hora de aterrizaje</td></tr>
+<tr><td>cantidad_pasajeros</td><td>NUMBER(4)</td><td></td><td>Cantidad de pasajeros a bordo</td></tr>
+<tr><td>cantidad_plazas_vacantes</td><td>NUMBER(4)</td><td></td><td>Plazas disponibles</td></tr>
+<tr><td>matricula_avion</td><td>VARCHAR2(10)</td><td class="fk">FK</td><td>Avión que realiza el vuelo</td></tr>
+<tr><td></td><td>id_programa</td><td>NUMBER</td><td class="fk">FK (opcional)</td></tr>
+</table>
+
+<h3>Infraestructura aeroportuaria</h3>
+<table>
+<tr><th>Tabla</th><th>Columna</th><th>Tipo</th><th>Llave</th><th>Descripción</th></tr>
+<tr><td rowspan="7"><b>AEROPUERTOS</b></td><td>id_aeropuerto</td><td>VARCHAR2(10)</td><td class="pk">PK</td><td>Código del aeropuerto</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(100)</td><td></td><td>Nombre del aeropuerto</td></tr>
+<tr><td>direccion</td><td>VARCHAR2(150)</td><td></td><td>Dirección</td></tr>
+<tr><td>num_oficina_oirs</td><td>VARCHAR2(20)</td><td></td><td>N° oficina OIRS</td></tr>
+<tr><td>num_oficina_aduana</td><td>VARCHAR2(20)</td><td></td><td>N° oficina aduana</td></tr>
+<tr><td>num_oficina_policia_internacional</td><td>VARCHAR2(20)</td><td></td><td>N° oficina PDI</td></tr>
+<tr><td>id_ciudad</td><td>NUMBER</td><td class="fk">FK</td><td>Ciudad donde se ubica</td></tr>
+<tr><td rowspan="5"><b>PISTAS</b></td><td>id_pista</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador de la pista</td></tr>
+<tr><td>numero_pista</td><td>VARCHAR2(10)</td><td></td><td>Número de la pista</td></tr>
+<tr><td>nombre</td><td>VARCHAR2(50)</td><td></td><td>Nombre de la pista</td></tr>
+<tr><td>dimensiones</td><td>VARCHAR2(50)</td><td></td><td>Dimensiones</td></tr>
+<tr><td>estado / id_aeropuerto</td><td>VARCHAR2(20) / VARCHAR2(10)</td><td class="fk">— / FK</td><td>Estado de la pista / aeropuerto al que pertenece</td></tr>
+<tr><td rowspan="4"><b>SERVICIOS_MANTENCION</b></td><td>id_servicio</td><td>NUMBER</td><td class="pk">PK</td><td>Identificador del servicio</td></tr>
+<tr><td>tipo_mantencion</td><td>VARCHAR2(50)</td><td></td><td>Tipo de mantención</td></tr>
+<tr><td>observaciones</td><td>VARCHAR2(300)</td><td></td><td>Observaciones</td></tr>
+<tr><td>id_pista</td><td>NUMBER</td><td class="fk">FK</td><td>Pista sobre la que se realiza</td></tr>
+</table>
+
+<h3>Tablas asociativas (relaciones muchos‑a‑muchos)</h3>
+<table>
+<tr><th>Tabla</th><th>Columna</th><th>Tipo</th><th>Llave</th><th>Descripción</th></tr>
+<tr><td rowspan="2"><b>ABORDAJES</b><br><span class="tag assoc">M:N</span></td><td>run_pasajero</td><td>VARCHAR2(12)</td><td class="pk">PK/FK</td><td>Pasajero que aborda</td></tr>
+<tr><td>codigo_vuelo</td><td>VARCHAR2(10)</td><td class="pk">PK/FK</td><td>Vuelo abordado</td></tr>
+<tr><td rowspan="3"><b>USOS_PISTA</b><br><span class="tag assoc">M:N</span></td><td>codigo_vuelo</td><td>VARCHAR2(10)</td><td class="pk">PK/FK</td><td>Vuelo que usa la pista</td></tr>
+<tr><td>id_pista</td><td>NUMBER</td><td class="pk">PK/FK</td><td>Pista utilizada</td></tr>
+<tr><td>fecha_uso</td><td>DATE</td><td></td><td>Fecha en que se usó la pista (atributo propio de la relación)</td></tr>
+<tr><td rowspan="3"><b>PARTICIPACIONES_PROGRAMA</b><br><span class="tag assoc">M:N</span></td><td>run_personal_vuelo</td><td>VARCHAR2(12)</td><td class="pk">PK/FK</td><td>Funcionario de vuelo</td></tr>
+<tr><td>id_programa</td><td>NUMBER</td><td class="pk">PK/FK</td><td>Programa de vuelo</td></tr>
+<tr><td>periodo</td><td>VARCHAR2(20)</td><td class="pk">PK</td><td>Semana/periodo de participación (atributo propio de la relación)</td></tr>
+</table>
+
+<h2>4. Justificación de tablas asociativas (relaciones muchos‑a‑muchos)</h2>
+<div class="panel">
+<div class="grid2">
+  <div>
+    <h3>Pasajeros ↔ Vuelos</h3>
+    <p>Un pasajero puede abordar muchos vuelos a lo largo del tiempo y un vuelo lleva muchos pasajeros.
+    Se resuelve con la tabla <code>ABORDAJES</code>, con clave primaria compuesta por
+    <span class="fk">run_pasajero</span> y <span class="fk">codigo_vuelo</span>. No se guarda como lista
+    dentro de <code>VUELOS</code>, tal como exige el enunciado.</p>
+  </div>
+  <div>
+    <h3>Vuelos ↔ Pistas</h3>
+    <p>Un vuelo puede usar más de una pista (despegue/aterrizaje) y una pista es usada por muchos vuelos,
+    con un dato propio: la fecha de uso. Se resuelve con <code>USOS_PISTA</code>
+    (PK compuesta <span class="fk">codigo_vuelo</span> + <span class="fk">id_pista</span>, con
+    <code>fecha_uso</code> como atributo de la relación) en lugar de una FK directa, porque la relación
+    tiene información propia que no pertenece a ninguna de las dos entidades por separado.</p>
+  </div>
+  <div>
+    <h3>Personal de vuelo ↔ Programas de vuelo</h3>
+    <p>Un funcionario de vuelo participa en varios programas y un programa agrupa a varios funcionarios,
+    pudiendo repetirse en distintos períodos. Se resuelve con <code>PARTICIPACIONES_PROGRAMA</code>
+    (PK compuesta por <span class="fk">run_personal_vuelo</span>, <span class="fk">id_programa</span> y
+    <span class="fk">periodo</span>), ya que el período es un dato histórico propio de cada participación.</p>
+  </div>
+  <div>
+    <h3>Relaciones 1:N resueltas con FK directa</h3>
+    <p>País→Región, Región→Ciudad, Ciudad→Pasajero, Ciudad→Aeropuerto, Aerolínea→Avión, Avión→Vuelo,
+    Programa→Vuelo (opcional), Aeropuerto→Pista, Aeropuerto→Personal de aeropuerto y Pista→Servicio de
+    mantención son todas relaciones uno‑a‑muchos sin atributos propios, por lo que se resuelven con una
+    clave foránea simple en la tabla del lado "muchos", sin necesidad de tabla intermedia.</p>
+  </div>
+</div>
+</div>
+
+<div class="note">
+  <b>Nota de alcance:</b> conforme a las instrucciones de la guía, este material entrega únicamente el
+  diagrama lógico y el diagrama relacional del caso Turbulencias Airlines S.A. No incluye creación de base
+  de datos ni sentencias SQL. Se recomienda abrir el proyecto en <b>Oracle SQL Developer Data Modeler</b>
+  y reproducir ambos diagramas para la entrega formal del ramo, usando este documento como referencia
+  de entidades, atributos, claves y relaciones.
+</div>
+
+<footer>
+  Generado como material de apoyo para la actividad "2.2.2 Turbulencias Airlines S.A." — Modelamiento MERE.
+</footer>
+
+</div>
+
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: "neutral", er: { useMaxWidth: false } });
+</script>
+</body>
+</html>

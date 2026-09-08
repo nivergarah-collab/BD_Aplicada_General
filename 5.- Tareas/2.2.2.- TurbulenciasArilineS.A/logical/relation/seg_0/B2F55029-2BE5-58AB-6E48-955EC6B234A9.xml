@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ABARCAR " directorySegmentName="seg_0" id="B2F55029-2BE5-58AB-6E48-955EC6B234A9">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:08:38 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>8F4F6D48-5673-98A2-E5AA-85C76C5BB347</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>abarca</nameOnSource>
+<nameOnTarget>es abarcado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E9074A3B-05B8-B136-D285-D2DCFBE98A16</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE1AC1FA-C4BF-06F5-F825-4F269D0DCB76</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

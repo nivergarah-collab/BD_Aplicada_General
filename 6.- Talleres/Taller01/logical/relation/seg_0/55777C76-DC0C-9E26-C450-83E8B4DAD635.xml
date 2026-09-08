@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GENERAR" directorySegmentName="seg_0" id="55777C76-DC0C-9E26-C450-83E8B4DAD635">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:50:01 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>86DC1B36-A36C-C07E-9D1B-581DFE20A65B</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>genera</nameOnSource>
+<nameOnTarget>es generado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A10338A-DA9A-6A46-E45D-32DC81F83B34</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CD89B67-FEA5-347C-FFAF-D8A57A63B58E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

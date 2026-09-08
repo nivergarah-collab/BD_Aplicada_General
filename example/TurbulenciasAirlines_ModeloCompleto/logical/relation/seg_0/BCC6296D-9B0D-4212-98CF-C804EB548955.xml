@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PARTICIPA" directorySegmentName="seg_0" id="BCC6296D-9B0D-4212-98CF-C804EB548955">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>participa en</nameOnSource>
+<nameOnTarget>cuenta con</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>E9628BB8-6FC7-4817-B8E9-D2ED0757470C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7E3BB41F-85B3-4429-896D-1FDC6287A063</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,7 +1,0 @@
-BUENAS PRACTICAS EN MERE
-
-1)nombre de las entidades tienen que ser en mayúscula.
-2)no utilizar "ñÑ" "   "(Espacios) y tildes.
-3)Nombres de ENTIDADES y ATRIBUTOS no pueden superar los 30 caracteres.
-4)Toda entidad tiene que tener si o si una clave primaria(primary key o pk)
-5)Los atributos, se escriben en minúscula y usan snake_case

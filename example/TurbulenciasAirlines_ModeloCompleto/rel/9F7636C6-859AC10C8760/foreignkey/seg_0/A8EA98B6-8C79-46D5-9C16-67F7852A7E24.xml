@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A8EA98B6-8C79-46D5-9C16-67F7852A7E24" containerWithKeyObject="3D2323EB-2A0B-42DA-A12E-EEA6019F3F97" localFKIndex="AA6EC50D-99F5-47BC-9D18-41B2F9F3D885" name="PASAJERO_CIUDAD_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>5F908D1B-776C-49E6-9570-A8324FD4414A</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<referredTableLongName>CIUDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>69635C73-7970-45DA-AB59-F0D95040D01B</referredTableID>
+<keyObject>C6D69880-F138-4D75-A643-8FDF4A83B676</keyObject>
+<referredKeyID>C6D69880-F138-4D75-A643-8FDF4A83B676</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_ciudad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

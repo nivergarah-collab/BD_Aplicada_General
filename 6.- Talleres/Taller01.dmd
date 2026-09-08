@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Taller01" id="8337C694-02CB-DBB7-825E-A96FB0DE71D8" version="3.5">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 23:18:55 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8337C694-02CB-DBB7-825E-A96FB0DE71D8</designId>
+</OSDM_Design>
