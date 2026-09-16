@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="664CBD7F-4FEC-9B27-EF7F-5E23A4F97FA7" name="BOLETA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:36:00 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nro_bol" id="748A5DDD-A997-96F9-65DA-BB620ECA3063">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:36:08 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_bol" id="AF766E7C-D831-7CEE-91BF-E0DF393E610D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:37:13 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_bar_bol" id="0649C585-2013-A6BD-4481-6FCC2B515597">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:37:39 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FC96D0B1-0682-6C9A-09C9-539A1E4C2C41" name="BOLETA PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:37:04 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>748A5DDD-A997-96F9-65DA-BB620ECA3063</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74F14570-76A2-D930-06FE-801A612D0506" name="PAIS">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:22:30 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pai" id="A1D5CAC9-F798-965A-7B1B-EAB17984E6BA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:22:38 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_pai" id="0DC44BB5-04DA-6634-4DAA-86547457176B">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:23:01 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AD0A927A-820E-CA32-6DF1-E81FD89F4884" name="PAIS PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:22:58 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1D5CAC9-F798-965A-7B1B-EAB17984E6BA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

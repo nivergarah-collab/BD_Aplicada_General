@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="55A1A043-B324-934E-36D5-9BB39E35BD9D" name="VENDEDOR">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:16:14 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="run_ven" id="22F38DD0-1445-125E-617B-CBDEE9F9850F">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:16:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[13]]></commentInRDBMS>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_ven" id="6083EE71-12D5-2690-5072-58F44A420BAA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:16:29 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ape_ven" id="ABE249F4-A3B2-89FA-61B0-3DE5633D1156">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:16:29 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D0130D26-10E6-01B5-3C65-52CAEBFDB55B" name="VENDEDOR PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:16:50 UTC</createdTime>
+<ownerDesignName>flotante</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22F38DD0-1445-125E-617B-CBDEE9F9850F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
