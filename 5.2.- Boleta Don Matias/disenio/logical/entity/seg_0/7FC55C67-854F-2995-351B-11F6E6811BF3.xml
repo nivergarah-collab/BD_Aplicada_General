@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7FC55C67-854F-2995-351B-11F6E6811BF3" name="EMPRESA ">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:31 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_emp" id="5B1C8190-EF13-DB3D-5685-CC9EAECBE9E4">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:42 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_emp" id="D64EF261-C349-32ED-AA91-F084DE1582C1">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:42 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dir_emp" id="0E584286-4091-39BB-B92C-A26FE89C026D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:43 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fono_empr" id="12668692-9D71-F271-C7B5-8AF3E81CFF28">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[formato +12312345678]]></commentInRDBMS>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="giro_empre" id="E9720890-7ED7-64D9-A607-BE1A8CD67E1D">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:07:43 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3AB5AABC-B57B-FE15-B319-5BCA7A1546DA" name="EMPRESA PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:09:17 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5B1C8190-EF13-DB3D-5685-CC9EAECBE9E4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

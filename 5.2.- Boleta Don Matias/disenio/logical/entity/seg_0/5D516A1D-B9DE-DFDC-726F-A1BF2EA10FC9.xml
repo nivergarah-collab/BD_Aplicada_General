@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5D516A1D-B9DE-DFDC-726F-A1BF2EA10FC9" name="RESOLUCION_FISCALIZADORA">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:04 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_res" id="C2560755-B7C3-DE38-65BD-377E13937123">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:30 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_res" id="E153E340-56B8-A228-33C1-CF3960F7DF75">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:56 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_res" id="C80F7E92-BDB8-57B9-65BA-D617F9665BE2">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:56 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="url_res" id="D1A04E2F-0D80-720E-3755-1CD264B05A29">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:56 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="095EDFF9-FD0B-DE4C-42D1-AD8B32B55EB7" name="RESOLUCION_FISCALIZADORA PK">
+<createdBy>nicolinu</createdBy>
+<createdTime>2026-09-16 16:33:52 UTC</createdTime>
+<ownerDesignName>disenio</ownerDesignName>
+<engineerTo>
+<item key="16814DEB-F251-B412-F705-8C495A8AE81F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C2560755-B7C3-DE38-65BD-377E13937123</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
