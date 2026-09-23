@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONTENER" directorySegmentName="seg_0" id="A49073D1-6344-5953-6AD8-3562D0443A0C">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:01:38 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>ABB3FC92-2858-182A-8B8C-3B8879091A03</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contiene</nameOnSource>
+<nameOnTarget>es contenido</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A2960E4E-F926-80C9-E238-4A369429009A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E9074A3B-05B8-B136-D285-D2DCFBE98A16</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

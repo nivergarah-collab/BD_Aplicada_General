@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ATENDER" directorySegmentName="seg_0" id="2D3FE556-8520-F0B6-F430-FC21D31FE961">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:46:50 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>584B4CE2-C250-468F-8E71-3CF59A5040BC</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>atiende</nameOnSource>
+<nameOnTarget>es atendida </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>47CEF641-43BD-76A3-487F-B0AFE21FC2ED</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A10338A-DA9A-6A46-E45D-32DC81F83B34</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

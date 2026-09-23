@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C58D15F9-ED32-A805-DE5C-513A8B99A590" name="GENERAR">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PISTA_numero" id="063CB867-8911-890A-110A-BC63439286FE">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E56FD597-A366-58D4-7082-F2E86C1A1AB6" referredColumn="D23DBEE7-1B43-5A17-27EF-DDA7407AAA26"/>
+</associations>
+</Column>
+<Column name="VUELO_code" id="73B818F2-6BB6-AF4A-EEDE-CD7505A9003E">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5DBEB5EF-008D-8B76-55F6-8A2B7601F9E4" referredColumn="1655DA8F-58BC-C68F-8532-880C912279F6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E1F1AC4-1A63-0450-DE6B-E3D81674C9F9" name="GENERAR_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="063CB867-8911-890A-110A-BC63439286FE"/>
+<colUsage columnID="73B818F2-6BB6-AF4A-EEDE-CD7505A9003E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E73DA871-0740-4101-88F5-4092A9E5CB63" name="GENERAR_PISTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>1A35FEF6-2EA7-537A-9F7C-189E29D825FC</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="063CB867-8911-890A-110A-BC63439286FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D4501A7-904F-3EDA-0CFA-91A9F6F5FB14" name="GENERAR_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>1A35FEF6-2EA7-537A-9F7C-189E29D825FC</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73B818F2-6BB6-AF4A-EEDE-CD7505A9003E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

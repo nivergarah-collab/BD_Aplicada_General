@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="018420D2-B8CD-F7B1-88F1-0693B524D792" name="REGISTRAR">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="AEROPUERTO_code" id="9CB7263A-683F-D38B-5FEC-76F3D4A0ACC8">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BAC3315-9268-B7DB-C087-B43450C69B90" referredColumn="E801F1B7-8AB2-BC09-C068-7A54744A853F"/>
+</associations>
+</Column>
+<Column name="AEROLINEA_id" id="A5E26667-FE8E-151A-0A05-15BA38B657A3">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C50B7C7-2515-A427-407C-889887246652" referredColumn="94C64705-BEA8-478C-C4C2-EAB8C299A4CE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2170911A-4F25-67F6-919F-16070C92FAD1" name="REGISTRAR_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CB7263A-683F-D38B-5FEC-76F3D4A0ACC8"/>
+<colUsage columnID="A5E26667-FE8E-151A-0A05-15BA38B657A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84B43321-F0BD-5E90-D433-B5852229C5B1" name="REGISTRAR_AEROPUERTO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>2B9829E6-AA66-6938-57E5-89991957A71F</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CB7263A-683F-D38B-5FEC-76F3D4A0ACC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5FB09E17-EB29-BB1C-048D-0F60A8B4770E" name="REGISTRAR_AEROLINEA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>2B9829E6-AA66-6938-57E5-89991957A71F</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5E26667-FE8E-151A-0A05-15BA38B657A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

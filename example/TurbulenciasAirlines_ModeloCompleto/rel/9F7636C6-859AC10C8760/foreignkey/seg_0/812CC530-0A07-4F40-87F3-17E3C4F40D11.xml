@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="812CC530-0A07-4F40-87F3-17E3C4F40D11" containerWithKeyObject="E4C71918-E4A0-4013-8905-FA024F3C7F1F" localFKIndex="0C39E037-9053-4850-B453-E6C26B580D1E" name="REGION_PAIS_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>43A3778A-55FF-4D02-992B-13B6EE031B11</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<referredTableLongName>PAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4A2B38B5-8462-4A87-B7BC-077178A1CD5E</referredTableID>
+<keyObject>CD89DF9F-D0A1-4251-9CE2-14B32792EDD2</keyObject>
+<referredKeyID>CD89DF9F-D0A1-4251-9CE2-14B32792EDD2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

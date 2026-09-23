@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UTILIZAR" directorySegmentName="seg_0" id="63EDC34B-CEC8-3956-B1C0-5C191A1D85CA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:48:25 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<sourcePk>DB1A8421-0243-FE0E-7307-3009B68291DC</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es utilizada </nameOnSource>
+<nameOnTarget>utilza</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3AF2F993-FFB0-FBBC-BE12-1CB668F605E0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A10338A-DA9A-6A46-E45D-32DC81F83B34</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

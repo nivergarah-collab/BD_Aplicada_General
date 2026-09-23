@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECDF460E-E047-E17C-41E1-B8F7F1A960D2" name="PAGOS">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:28:19 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pag" id="C137DEB2-8A8D-E75C-E9B8-4A64BF875C38">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:28:39 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mon_pag" id="B88FC49C-4C6D-54C7-960D-E62B8A020560">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:28:39 UTC</createdTime>
+<comment><![CDATA[monto pago ]]></comment>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fec_pag" id="605DD4AD-C177-6BD5-1430-631B242A1705">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:28:39 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="est_pag" id="200C2A77-4E7A-E804-D44C-71258969A747">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:28:39 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_con" id="BA3242B3-6CB6-5942-3741-7058F7661EB7">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:57:16 UTC</createdTime>
+<comment><![CDATA[id consulta]]></comment>
+<generatorID>3535FA17-795E-8DDD-4774-BA2FB28B0836</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<referedAttribute>BE3BA426-E9DA-4FB0-12DC-C0CC5AE5B714</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_met_pago" id="4F2CB124-EF38-0FE2-F32D-8C8745D0272C">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:59:44 UTC</createdTime>
+<generatorID>57ACE1DB-2709-6279-6B49-8B513EB649D9</generatorID>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<referedAttribute>DE8B619D-0334-7BE7-0EC6-9048851A9786</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7B08F262-BBD9-40E4-C5D0-CA35CB8A0E14" name="PAGOS PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:29:00 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C137DEB2-8A8D-E75C-E9B8-4A64BF875C38</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E9074A3B-05B8-B136-D285-D2DCFBE98A16" name="Region">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 20:59:34 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_region" id="3E2E570A-A9F5-2D6F-27AE-1136887D5C14">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 20:59:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tengo aca la duda si es mejor poner solo id o algo asi como id_region. Lo mismo en las siguientes fases de la cadena ]]></commentInRDBMS>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="4DF2668C-DDA3-5BC0-DBDD-23A4D3CF1523">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:00:40 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pais" id="53498A10-8899-6011-FC5E-FC1E42FFCFB4">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 21:01:38 UTC</createdTime>
+<generatorID>A49073D1-6344-5953-6AD8-3562D0443A0C</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<referedAttribute>90B1AD66-CA16-7981-10A1-B050D49038EA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8F4F6D48-5673-98A2-E5AA-85C76C5BB347" name="Region PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 20:59:57 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3E2E570A-A9F5-2D6F-27AE-1136887D5C14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

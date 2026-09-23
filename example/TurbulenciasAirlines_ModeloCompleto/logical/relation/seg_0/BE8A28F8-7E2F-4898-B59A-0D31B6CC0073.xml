@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RECIBE" directorySegmentName="seg_0" id="BE8A28F8-7E2F-4898-B59A-0D31B6CC0073">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<sourcePk>3E6E6811-E427-4401-9F33-91992EEAA570</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>recibe</nameOnSource>
+<nameOnTarget>se realiza en</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3BEBD8D9-6784-473A-B454-7E95BC1B4B85</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B295D51-047A-4E00-ACD1-9DA50B018E22</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

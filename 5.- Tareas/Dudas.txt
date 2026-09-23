@@ -1,0 +1,31 @@
+1) Para los id, mejor usar varchar o integer? 
+
+2) Personal de vuelo y aeropuerto, deben estar conectados a ciudad? 
+(mi teoría es que si no lo están quizá su dirección no tenga completo sentido)
+
+3) las etiquetas deben ser estrictas ej: "reporta - es reportada" , o se permiten situaciones como ej: "recibe - se realiza en"  (caso pistas -mantención)
+
+4) Tengo duda en las relaciones 
+pista-vuelo: 
+es correcto que una pista pueda no tener vuelos? ( que es lo que creo haber puesto) 
+pasajeros-vuelo:
+Aca puse que un vuelo puede no tener pasajeros (seria tener el 100 % de vacantes), pero que un pasajero no puede tener vuelo (no seria pasajero)
+
+
+
+
+
+
+
+notas:
+Dije que:
+a) Aeropuertos NO puede NO TENER personal ni pistas asociados. 
+b) Un vuelo PUEDE O NO ser parte de un programa de vuelo. 
+!!
+Por tanto personal de vuelo esta conectado tanto a VUELO como a PROGRAMA_DE_VUELO, pero intuyo que quizá eso pueda generar errores.
+!!
+
+c) La relación aerolínea-aeropuerto es N:M. Que todo aeropuerto debe tener aerolíneas y a la inversa.  
+
+
+

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ALBERGAR" directorySegmentName="seg_0" id="BA9C4574-0CAD-1E03-225E-734393DF30FA">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:37:32 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>6D8CA351-D0DA-FCC8-814E-FA061229F710</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>alberga</nameOnSource>
+<nameOnTarget>es albergado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>929F029C-E2C9-70AE-5F8E-71AEEF17C400</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FE55DA3F-22C1-23F7-16C3-5BBA9F1768C5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

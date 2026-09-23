@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PARTICIPAR" directorySegmentName="seg_0" id="34EFD92F-2AA2-D83C-DBBA-604A0B754C3B">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:48:09 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>participa</nameOnSource>
+<nameOnTarget>es participado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>60FF9748-B6C8-2D2A-9628-5D76D7997E01</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00194ECA-5568-979E-FDA4-CF9B51FA082F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

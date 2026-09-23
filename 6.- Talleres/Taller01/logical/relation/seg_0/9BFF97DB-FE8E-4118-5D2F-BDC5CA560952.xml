@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="EJERCER" directorySegmentName="seg_0" id="9BFF97DB-FE8E-4118-5D2F-BDC5CA560952">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-05 00:55:30 UTC</createdTime>
+<ownerDesignName>Taller01</ownerDesignName>
+<engineerTo>
+<item key="CF82008F-8789-CDEC-C252-B813A5EC2B3B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>ejerce</nameOnSource>
+<nameOnTarget>es ejercida</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>47CEF641-43BD-76A3-487F-B0AFE21FC2ED</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>647667E0-328C-4BE5-48B4-B29DFE6E48E1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

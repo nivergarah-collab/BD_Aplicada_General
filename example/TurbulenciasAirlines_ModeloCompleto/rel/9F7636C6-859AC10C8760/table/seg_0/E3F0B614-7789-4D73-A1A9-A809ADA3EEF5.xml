@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3F0B614-7789-4D73-A1A9-A809ADA3EEF5" name="ABORDAJES">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PASAJERO_run" id="FE8A30B4-B9C6-4BE6-B647-E544EFCAF0C8">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE879056-D485-4B60-8479-FCAB460F29F9" referredColumn="6B427F1D-D561-4E91-882F-9390B8148C59"/>
+</associations>
+</Column>
+<Column name="VUELO_codigo_vuelo" id="5F2B2D57-4AA9-443C-80D7-237B73D0CD5D">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C4C9955-D5EF-4DFF-BDBC-918E9844C812" referredColumn="B6DD86E9-7736-40FB-A393-3C53D3E8DC0C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48A388FA-520E-4606-BE37-ED149AD557FE" name="ABORDAJES_PK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE8A30B4-B9C6-4BE6-B647-E544EFCAF0C8"/>
+<colUsage columnID="5F2B2D57-4AA9-443C-80D7-237B73D0CD5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA0E5596-0696-4DA8-B60F-3FB02433AFA8" name="ABORDAJES_PASAJERO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>8E3DE7C6-CE93-41FF-8AB5-283B188786A6</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE8A30B4-B9C6-4BE6-B647-E544EFCAF0C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3D60562-0995-4899-A0E5-E4761AEF095B" name="ABORDAJES_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>8E3DE7C6-CE93-41FF-8AB5-283B188786A6</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F2B2D57-4AA9-443C-80D7-237B73D0CD5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

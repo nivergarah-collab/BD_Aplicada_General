@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="410A6E68-716A-4D37-8A59-B66FD1650520" containerWithKeyObject="E25002B3-AC02-4539-9076-7C294BEB1DA8" localFKIndex="C698AB82-58CC-4C19-AADD-BD5850AABA6A" name="USOS_PISTA_VUELO_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>BC0FCDCD-7CBF-4C26-B227-A69B1F1404C4</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<referredTableLongName>VUELO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>98870E9C-64CC-485D-8201-259556C0E2E2</referredTableID>
+<keyObject>81C2BC41-B31D-432B-92B3-79ADD55167AC</keyObject>
+<referredKeyID>81C2BC41-B31D-432B-92B3-79ADD55167AC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo_vuelo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9FE43A55-F983-1264-28D6-E16643FB8981" containerWithKeyObject="9D11CA6E-3531-204D-E6CE-FF561EBDE507" localFKIndex="924E6884-6499-D4E2-27AC-A0A7993112AB" name="Region_PAIS_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:27:50 UTC</createdTime>
+<generatorID>A49073D1-6344-5953-6AD8-3562D0443A0C</generatorID>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<referredTableLongName>PAIS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E1CF7838-91DD-1C8D-2DE6-6D7A28FCC105</referredTableID>
+<keyObject>F74D7853-C35C-30AF-6A52-EB65F091E768</keyObject>
+<referredKeyID>F74D7853-C35C-30AF-6A52-EB65F091E768</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pais</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

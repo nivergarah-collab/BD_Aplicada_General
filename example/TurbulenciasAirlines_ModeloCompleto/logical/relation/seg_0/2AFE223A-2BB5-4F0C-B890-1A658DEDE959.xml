@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ABARCAR" directorySegmentName="seg_0" id="2AFE223A-2BB5-4F0C-B890-1A658DEDE959">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<sourcePk>68D3F5BF-AA9B-4CA5-91E9-542A884B4059</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>abarca</nameOnSource>
+<nameOnTarget>pertenece a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>903022B5-886F-44D8-8641-814B852EF3FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5D2FEAA7-CB84-475F-AEB6-82E551304AFE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

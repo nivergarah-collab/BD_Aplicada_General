@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="BF0A47C1-88ED-D475-1E2B-1B9235C9723D" mainViewID="843B5021-31A0-7E28-D996-CFEC7B5A3D46">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 15:07:49 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

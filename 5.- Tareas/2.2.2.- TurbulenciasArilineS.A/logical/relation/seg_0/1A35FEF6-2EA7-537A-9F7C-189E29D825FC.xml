@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GENERAR" directorySegmentName="seg_0" id="1A35FEF6-2EA7-537A-9F7C-189E29D825FC">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-04 00:01:07 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>0550267C-35B7-40F5-24B3-1C6A1E39D177</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>genera</nameOnSource>
+<nameOnTarget>es generado</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>835BE5E9-1B9B-D442-CA07-32B4DB32A4AE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>929F029C-E2C9-70AE-5F8E-71AEEF17C400</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

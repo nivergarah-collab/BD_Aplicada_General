@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F8A18FC4-84E4-470D-9BEF-9DF25096F0D7" containerWithKeyObject="E25002B3-AC02-4539-9076-7C294BEB1DA8" localFKIndex="0061E420-DAFD-458D-AD2E-183DA3FA7D43" name="USOS_PISTA_PISTA_FK">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<generatorID>BC0FCDCD-7CBF-4C26-B227-A69B1F1404C4</generatorID>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<referredTableLongName>PISTA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EC20B658-0C68-4F71-9F5B-4104D9E34458</referredTableID>
+<keyObject>E419650A-1D32-4665-BFB8-BEB5963E3837</keyObject>
+<referredKeyID>E419650A-1D32-4665-BFB8-BEB5963E3837</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_pista</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

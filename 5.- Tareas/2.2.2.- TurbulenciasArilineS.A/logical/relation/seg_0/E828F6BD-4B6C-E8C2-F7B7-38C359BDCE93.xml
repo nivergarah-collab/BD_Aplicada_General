@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="POSEER" directorySegmentName="seg_0" id="E828F6BD-4B6C-E8C2-F7B7-38C359BDCE93">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 22:13:54 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>71615655-2E5D-F3CF-F917-D99208D442A0</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>posee</nameOnSource>
+<nameOnTarget>es poseido </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B14283AF-DC47-A72C-EA91-30C4FDDAA892</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>896443BC-62EC-6ECA-2FA6-B7FA8D79F91B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UBICAR" directorySegmentName="seg_0" id="E1A11355-4B63-4E9F-532C-7D5DDA1A64D2">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:53:36 UTC</createdTime>
+<ownerDesignName>2.2.2.- TurbulenciasArilineS.A</ownerDesignName>
+<engineerTo>
+<item key="93330352-98AD-9240-22F8-0A60DCF277BC" value="true"/>
+</engineerTo>
+<sourcePk>27380799-E9D9-3480-F4AA-AC8107967A80</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es ubicado</nameOnSource>
+<nameOnTarget>se ubica</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AE1AC1FA-C4BF-06F5-F825-4F269D0DCB76</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4C3326FE-6EC3-563B-8F7C-D655D9B6CF5D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

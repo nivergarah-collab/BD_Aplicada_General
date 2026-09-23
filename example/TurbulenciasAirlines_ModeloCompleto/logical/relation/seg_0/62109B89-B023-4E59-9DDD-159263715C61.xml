@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ADMINISTRA" directorySegmentName="seg_0" id="62109B89-B023-4E59-9DDD-159263715C61">
+<createdBy>nvher</createdBy>
+<createdTime>2026-09-03 23:43:33 UTC</createdTime>
+<ownerDesignName>TurbulenciasAirlines_ModeloCompleto</ownerDesignName>
+<engineerTo>
+<item key="9F7636C6-869A-44DE-A0AD-859AC10C8760" value="true"/>
+</engineerTo>
+<sourcePk>5432D8B9-DC3C-4727-B9B7-A1F0549E3E41</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>administra</nameOnSource>
+<nameOnTarget>es administrada por</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AD2EB35B-2C60-4DE2-BA61-088BA9851118</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BEBD8D9-6784-473A-B454-7E95BC1B4B85</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
